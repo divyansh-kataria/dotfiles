@@ -10,3 +10,6 @@ vim.cmd("highlight EndOfBuffer guibg=NONE")
 vim.cmd("highlight SignColumn guibg=NONE")
 
 
+vim.opt.clipboard = "unnamedplus"
+
+
