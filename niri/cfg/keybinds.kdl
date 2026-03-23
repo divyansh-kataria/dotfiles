@@ -17,7 +17,7 @@ binds {
     Mod+V                               hotkey-overlay-title="Clipboard Manager" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
     Mod+Shift+E                         hotkey-overlay-title="Emoji Selector" { spawn-sh "qs -c noctalia-shell ipc call launcher emoji"; }
     Mod+Shift+M                         hotkey-overlay-title="System Monitor" { spawn-sh "qs -c noctalia-shell ipc call systemMonitor toggle"; }
-    Mod+B                               hotkey-overlay-title="Open Browser: Brave" { spawn "brave"; }
+    Mod+B                               hotkey-overlay-title="Open Browser: Helium" { spawn "helium-browser"; }
     Mod+ALT+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
     Mod+Shift+Q                         hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
 
