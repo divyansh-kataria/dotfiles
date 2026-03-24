@@ -1,0 +1,151 @@
+##### CachyOS Post Install Setup[Niri/w\Noctalia + GNOME + KDE]
+
+### Apps Installation & DE specific tweaks
+
+## Niri/w\Noctalia
+
+paru -Rns micro cachyos-micro-settings
+
+paru -S vlc mpv yt-dlp gparted neovim kitty gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd cliphist wlsunset helium-browser-bin librewolf-bin spotify visual-studio-code-bin ente-auth-bin localsend-bin
+
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+sudo nvim /etc/fstab
+then add
+x-gvfs-show
+to /data partition
+
+## GNOME
+
+sudo pacman -Rns gedit firefox
+
+paru -S vlc mpv yt-dlp gparted neovim kitty seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd gnome-system-monitor gnome-font-viewer helium-browser-bin librewolf-bin spotify visual-studio-code-bin ente-auth-bin localsend-bin
+
+
+## KDE
+
+sudo pacman -Rns kdeconnect firefox
+
+paru -S vlc mpv yt-dlp gparted neovim kitty seahorse qbittorrent blanket ttf-jetbrains-mono-nerd helium-browser-bin librewolf-bin spotify visual-studio-code-bin ente-auth-bin localsend-bin
+
+
+### Terminal Shell Setup
+
+##Change shell to zsh from fish
+
+chsh -s /usr/bin/zsh
+
+then run
+
+nvim ~/.zshrc
+
+paste this in bottom:-
+
+# Default editor
+export EDITOR=nvim
+export VISUAL=nvim
+
+then run
+
+source ~/.zshrc
+
+check with:- echo $EDITOR
+
+
+### Git Setup
+
+git config --global user.name "Divyansh Kataria"
+
+git config --global user.email "217927899+divyansh-kataria@users.noreply.github.com"
+
+git config --global credential.helper libsecret
+
+to check:- git config --list
+
+# clone my dotfiles
+
+git clone https://github.com/divyansh-kataria/dotfiles.git
+
+this contains dotfiles for niri, noctalia, gtk-3.0, alacritty, kitty, mpv, nvim
+
+# apply my dotfiles using symlinks
+
+rm -rf ~/.config/nvim
+ln -s ~/dotfiles/nvim ~/.config/nvim
+
+rm -rf ~/.config/niri
+ln -s ~/dotfiles/niri ~/.config/niri
+
+rm -rf ~/.config/kitty
+ln -s ~/dotfiles/kitty ~/.config/kitty
+
+rm -rf ~/.config/alacritty
+ln -s ~/dotfiles/alacritty ~/.config/alacritty
+
+rm -rf ~/.config/mpv
+ln -s ~/dotfiles/mpv ~/.config/mpv
+
+rm -rf ~/.config/gtk-3.0
+ln -s ~/dotfiles/gtk-3.0 ~/.config/gtk-3.0
+
+to check, run:- ls -l ~/.config
+
+
+### Encrypted DNS Setup(Quad9)
+
+1. Configure systemd-resolved
+
+sudo nvim /etc/systemd/resolved.conf
+
+Paste this:-
+
+[Resolve]
+DNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::9#dns.quad9.net 2620:fe::fe#dns.quad9.net
+FallbackDNS=1.1.1.1#cloudflare-dns.com 2606:4700:4700::1111#cloudflare-dns.com
+DNSSEC=yes
+DNSOverTLS=yes
+
+2. Restart resolver
+
+sudo systemctl restart systemd-resolved
+
+3. Make NetworkManager use systemd-resolved
+
+sudo nvim /etc/NetworkManager/conf.d/dns.conf
+
+Paste:-
+
+[main]
+dns=systemd-resolved
+
+4. Ignore router DNS
+
+nmcli connection modify "Wired connection 1" ipv4.ignore-auto-dns yes ipv6.ignore-auto-dns yes
+
+to check connection name(if not "Wired Connection 1") then run:- nmcli connection show
+
+5. Restart connection
+
+nmcli connection down "Wired connection 1" && nmcli connection up "Wired connection 1"
+
+6. Link resolv.conf to systemd-resolved
+
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+
+sudo systemctl restart systemd-resolved
+
+7. Verify
+
+resolvectl status
+
+should see quad9 dns and dnsovertls and dnssec enabled and only in global and no ip in eno1
+
+8. Final test
+
+resolvectl query cloudflare.com
+
+should see:- Data is authenticated: yes
+Data was acquired via encrypted transport: yes
+
+
+
