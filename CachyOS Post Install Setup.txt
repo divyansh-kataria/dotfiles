@@ -137,7 +137,7 @@ sudo systemctl restart systemd-resolved
 
 resolvectl status
 
-should see quad9 dns and dnsovertls and dnssec enabled and only in global and no ip in eno1
+should see quad9 dns and dnsovertls enabled and only in global and no ip in eno1
 
 8. Final test
 
