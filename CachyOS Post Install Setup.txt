@@ -6,7 +6,7 @@
 
 paru -Rns firefox micro cachyos-micro-settings
 
-paru -S vlc mpv yt-dlp gparted neovim kitty gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd cliphist wlsunset helium-browser-bin librewolf-bin spotify visual-studio-code-bin ente-auth-bin localsend-bin
+paru -S vlc mpv yt-dlp gparted neovim kitty gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd cliphist wlsunset helium-browser-bin librewolf-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin localsend-bin
 
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
