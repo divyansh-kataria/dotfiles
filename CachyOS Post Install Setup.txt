@@ -4,7 +4,7 @@
 
 ## Niri/w\Noctalia
 
-paru -Rns micro cachyos-micro-settings
+paru -Rns firefox micro cachyos-micro-settings
 
 paru -S vlc mpv yt-dlp gparted neovim kitty gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd cliphist wlsunset helium-browser-bin librewolf-bin spotify visual-studio-code-bin ente-auth-bin localsend-bin
 
@@ -17,16 +17,16 @@ to /data partition
 
 ## GNOME
 
-sudo pacman -Rns gedit firefox
+sudo pacman -Rns firefox micro cachyos-micro-settings
 
-paru -S vlc mpv yt-dlp gparted neovim kitty seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd gnome-system-monitor gnome-font-viewer helium-browser-bin librewolf-bin spotify visual-studio-code-bin ente-auth-bin localsend-bin
+paru -S vlc mpv yt-dlp gparted neovim kitty seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd wl-clipboard gnome-system-monitor gnome-font-viewer helium-browser-bin librewolf-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 
 ## KDE
 
-sudo pacman -Rns kdeconnect firefox
+sudo pacman -Rns firefox micro cachyos-micro-settings
 
-paru -S vlc mpv yt-dlp gparted neovim kitty seahorse qbittorrent blanket ttf-jetbrains-mono-nerd helium-browser-bin librewolf-bin spotify visual-studio-code-bin ente-auth-bin localsend-bin
+paru -S vlc mpv yt-dlp gparted neovim kitty qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard helium-browser-bin librewolf-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 
 ### Terminal Shell Setup
@@ -68,7 +68,7 @@ git clone https://github.com/divyansh-kataria/dotfiles.git
 
 this contains dotfiles for niri, noctalia, gtk-3.0, alacritty, kitty, mpv, nvim
 
-# apply my dotfiles using symlinks
+# apply required dotfiles using symlinks
 
 rm -rf ~/.config/nvim
 ln -s ~/dotfiles/nvim ~/.config/nvim
