@@ -1,0 +1,39 @@
+Plugins list
+# Theme:- Catppuccin Mocha Theme
+# File Explorer:- nvim-tree.lua (depends on nvim-web-devicons)
+# Search:- telescope.nvim (depends on plenary.nvim)
+# Manager:- lazy.nvim
+
+Important keybinds
+| Key               | Action            |
+| ------------------| ------------------|
+| `h j k l`         | move              |
+| `w`               | next word         |
+| `b`               | previous word     |
+| `gg`              | top               |
+| `G`               | bottom            |
+| `i`               | insert            |
+| `ESC`             | normal mode       |
+| `y`               | copy              |
+| `d`               | cut               |
+| `p`               | paste             |
+| `u`               | undo              |
+| `Ctrl+r`          | redo              |
+| `:vsp`            | vertical split    |
+| `:sp`             | horizontal split  |
+| `Ctrl+h`          | left              |
+| `Ctrl+l`          | right             |
+| `Ctrl+j`          | down              |
+| `Ctrl+k`          | up                |
+| `space + e`       | toggle explorer   |
+| `Enter`           | open file         |
+| `a`               | create file       |
+| `d`               | delete            |
+| `r`               | rename            |
+| `space + f + f`   | find files        |
+| `space + f + g`   | search text       |
+| type              | filter            |
+| `Enter`           | open              |
+| `Ctrl+j/k`        | move selection    |
+
+
