@@ -18,4 +18,6 @@ return {
 	{ import = "divyansh.plugins.comment" },
 	{ import = "divyansh.plugins.formatting" },
 	{ import = "divyansh.plugins.gitsigns" },
+	{ import = "divyansh.plugins.scroll" },
+	{ import = "divyansh.plugins.dashboard" },
 }
