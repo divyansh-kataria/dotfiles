@@ -6,10 +6,10 @@ keymap.set("n", "<leader>w", ":w<CR>")
 keymap.set("n", "<leader>q", ":q<CR>")
 
 -- Telescope
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
-keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
-keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
-keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
+keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
+keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" })
+keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Buffers" })
+keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Help" })
 
 -- 🔥 Extra powerful ones
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })
@@ -32,4 +32,3 @@ keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
 keymap.set("n", "<leader>ee", vim.diagnostic.open_float, { desc = "Show diagnostics" })
 keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Prev diagnostic" })
 keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
-
