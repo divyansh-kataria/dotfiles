@@ -17,6 +17,7 @@ return {
 					"lua_ls",
 					"pyright",
 					"ts_ls",
+					"cssls",
 				},
 			})
 		end,
@@ -38,8 +39,9 @@ return {
 			})
 			vim.lsp.config("pyright", {})
 			vim.lsp.config("ts_ls", {})
+			vim.lsp.config("cssls", {})
 
-			vim.lsp.enable({ "lua_ls", "pyright", "ts_ls" })
+			vim.lsp.enable(require("mason-lspconfig").get_installed_servers())
 		end,
 	},
 }
