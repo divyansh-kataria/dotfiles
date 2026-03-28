@@ -1,0 +1,127 @@
+@import "colors.css";
+
+* {
+  all: unset;
+  font-family: "Google Sans Flex", "JetBrainsMono Nerd Font Propo";
+  font-size: 14px;
+}
+
+tooltip {
+  background-color: @bg1;
+  color: @fg;
+  border-radius: 12px;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-weight: 500;
+}
+
+.modules-center {
+  background-color: @bg1;
+  color: @fg;
+  padding: 0 12px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#clock {
+  background-color: @bg2;
+  padding: 0 8px;
+  margin: 6px 0;
+  border-radius: 99px;
+  color: @fg;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+#clock:hover {
+  background-color: @bg3;
+}
+
+#workspaces {
+  background-color: @bg2;
+  padding: 0;
+  margin: 6px 0;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#workspaces button {
+  background-color: @bg3;
+  padding: 0px 6px;
+  border-radius: 99px;
+  margin: 0 2px;
+  transition: min-width 0.3s ease, background-color 0.2s ease, transform 0.2s ease;
+  min-width: 7px;
+}
+
+#workspaces button.empty {
+  color: @grey0;
+}
+
+#workspaces button.active {
+  background-color: @green;
+  color: @bg1;
+  min-width: 1.5rem;
+  font-weight: 500;
+  transition: none;
+}
+
+#workspaces button:hover {
+  background-color: @purple;
+  transition: background-color 0.2s ease;
+}
+
+#battery {
+  background-color: @green;
+  margin: 6px 0;
+  padding: 0 4px;
+  border-radius: 99px;
+  font-weight: 500;
+  color: @bg1;
+  letter-spacing: -0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: filter 0.2s ease;
+}
+
+#battery.warning {
+  background-color: @yellow;
+}
+
+#battery.critical {
+  background-color: @red;
+}
+
+#battery:hover {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#network {
+  background-color: @bg2;
+  padding: 0 8px;
+  margin: 6px 0;
+  border-radius: 99px;
+  color: @fg;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+#network:hover {
+  background-color: @bg3;
+}
+
+#pulseaudio {
+  background-color: @bg2;
+  padding: 0 8px;
+  margin: 6px 0;
+  border-radius: 99px;
+  color: @fg;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+#pulseaudio:hover {
+  background-color: @bg3;
+}

@@ -1,4 +1,6 @@
 {
+  "spacing": 18,
+  "margin-top": 12,
   "modules-center": [
     "clock",
     "hyprland/workspaces",
@@ -8,7 +10,8 @@
   ],
   "clock": {
     "interval": 60,
-    "format": "{:%H:%M}"
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}"
   },
   "hyprland/workspaces": {
     "format": "{name}",
@@ -27,8 +30,8 @@
   },
   "pulseaudio": {
     "format": "{volume}% {icon}",
-    "format-bluetooth": "{volume}% {icon}",
-    "format-muted": "",
+    "format-bluetooth": "{volume}% ",
+    "format-muted": "Muted ",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
@@ -38,6 +41,7 @@
       "portable": "",
       "car": "",
       "default": [
+        "",
         "",
         ""
       ]
@@ -51,23 +55,34 @@
   "network": {
     "interface": "eno1",
     "format": "{ifname}",
-    "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+    "format-wifi": "{essid} {icon}",
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
+    "format-ethernet": " LAN",
     "format-disconnected": "", //An empty format will hide the module.
     "tooltip-format": "{ifname} via {gwaddr} 󰊗",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-ethernet": "{ifname}  ",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50
   },
   "battery": {
-    "format": "{capacity}% {icon}",
+    "format": "{capacity}",
     "format-icons": [
       "",
       "",
       "",
       "",
       ""
-    ]
+    ],
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
   }
 }
