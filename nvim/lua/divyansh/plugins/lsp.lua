@@ -40,6 +40,8 @@ return {
 			vim.lsp.config("pyright", {})
 			vim.lsp.config("ts_ls", {})
 			vim.lsp.config("cssls", {})
+			vim.lsp.config("jsonls", {})
+			vim.lsp.config("html", {})
 
 			vim.lsp.enable(require("mason-lspconfig").get_installed_servers())
 		end,
