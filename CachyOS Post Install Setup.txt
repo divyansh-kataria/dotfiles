@@ -6,7 +6,7 @@
 
 paru -Rns micro meld vlc-plugins-all kwallet shelly
 
-paru -S vlc vlc-plugins-all mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd cliphist wlsunset helium-browser-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S vlc vlc-plugins-all mpv yt-dlp gparted neovim kitty tree-sitter-cli nwg-look nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd cliphist wlsunset helium-browser-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 pipx ensurepath
 
