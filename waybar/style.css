@@ -23,6 +23,15 @@ tooltip {
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.modules-right {
+  background-color: @bg1;
+  color: @fg;
+  padding: 0 12px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin: 0 8px 0 0;
+}
+
 #clock {
   background-color: @bg2;
   padding: 0 8px;
@@ -51,7 +60,7 @@ tooltip {
   padding: 0px 6px;
   border-radius: 99px;
   margin: 0 2px;
-  transition: min-width 0.3s ease, background-color 0.2s ease, transform 0.2s ease;
+  transition: min-width 0.3s ease, background-color 0.2s ease;
   min-width: 7px;
 }
 
@@ -123,5 +132,21 @@ tooltip {
 }
 
 #pulseaudio:hover {
+  background-color: @bg3;
+}
+
+#mpris {
+  background-color: @bg2;
+  padding: 0 8px;
+  margin: 6px 0;
+  border-radius: 99px;
+  color: @fg;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  min-width: 120px;
+  transition: background-color 0.2s ease;
+}
+
+#mpris:hover {
   background-color: @bg3;
 }

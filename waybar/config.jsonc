@@ -1,12 +1,15 @@
 {
   "spacing": 18,
-  "margin-top": 12,
+  "margin-top": 8,
   "modules-center": [
     "clock",
     "hyprland/workspaces",
     "pulseaudio",
     "network",
     "battery"
+  ],
+  "modules-right": [
+    "mpris"
   ],
   "clock": {
     "interval": 60,
@@ -51,6 +54,20 @@
     "ignored-sinks": [
       "Easy Effects Sink"
     ]
+  },
+  "mpris": {
+    "format": "{player_icon} {title}",
+    "format-paused": "{player_icon}",
+    "player-icons": {
+      "spotify": "",
+      "firefox": "",
+      "default": ""
+    },
+    "status-icons": {
+      "playing": "",
+      "paused": ""
+    },
+    "max-length": 25
   },
   "network": {
     "interface": "eno1",
