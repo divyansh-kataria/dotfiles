@@ -12,7 +12,7 @@
 
     cursor {
 	xcursor-theme "Bibata-Modern-Ice"
-        xcursor-size 22
+        xcursor-size 20
     }
 
     debug {
