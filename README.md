@@ -1,3 +1,3 @@
-These are my Niri with Noctalia Shell dotfiles which contains configs of alacritty, kitty, nvim, niri and noctalia settings, forked from cachyos-niri-noctalia
+My dotfiles of alacritty, gtk3, Hyprland, kitty, mpv, niri, nvim and waybar
 
 Author - Divyansh Kataria
