@@ -6,7 +6,7 @@
 
 paru -Rns micro meld vlc-plugins-all kwallet shelly
 
-paru -S vlc vlc-plugins-all mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd cliphist wlsunset helium-browser-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S vlc vlc-plugins-all mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd cliphist wlsunset  bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 pipx ensurepath
 
@@ -29,7 +29,7 @@ to /data partition
 
 sudo pacman -Rns micro meld shelly
 
-paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd wl-clipboard gnome-system-monitor gnome-font-viewer helium-browser-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd wl-clipboard gnome-system-monitor gnome-font-viewer spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 
 ## KDE
@@ -109,7 +109,7 @@ to check, run:- ls -l ~/.config
 
 1. Configure systemd-resolved
 
-sudo nvim /etc/systemd/resolved.conf
+sudoedit nvim /etc/systemd/resolved.conf
 
 Paste this:-
 
@@ -124,7 +124,7 @@ sudo systemctl restart systemd-resolved
 
 3. Make NetworkManager use systemd-resolved
 
-sudo nvim /etc/NetworkManager/conf.d/dns.conf
+sudoedit nvim /etc/NetworkManager/conf.d/dns.conf
 
 Paste:-
 
@@ -151,7 +151,7 @@ sudo systemctl restart systemd-resolved
 
 resolvectl status
 
-should see quad9 dns and dnsovertls enabled and only in global and no ip in eno1
+should see quad9 dns and stub and dnsovertls enabled and only in global and no ip in eno1
 
 8. Final test
 
