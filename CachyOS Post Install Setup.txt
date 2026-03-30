@@ -2,21 +2,11 @@
 
 ### Apps Installation & DE specific tweaks
 
+paru -Rns micro meld shelly
+
 ## Niri/w\Noctalia
 
-paru -Rns micro meld vlc-plugins-all kwallet shelly
-
-paru -S vlc vlc-plugins-all mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd cliphist wlsunset  bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
-
-pipx ensurepath
-
-pipx install black
-
-mkdir -p ~/.npm-global
-
-npm config set prefix '~/.npm-global'
-
-npm install -g prettier
+paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist wlsunset brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
@@ -27,17 +17,11 @@ to /data partition
 
 ## GNOME
 
-sudo pacman -Rns micro meld shelly
-
-paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd wl-clipboard gnome-system-monitor gnome-font-viewer spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
-
+paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd wl-clipboard gnome-system-monitor gnome-font-viewer brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 ## KDE
 
-sudo pacman -Rns micro meld shelly
-
-paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard helium-browser-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
-
+paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 ### Terminal Shell Setup
 
@@ -55,16 +39,37 @@ paste this in bottom:-
 export EDITOR=nvim
 export VISUAL=nvim
 
-after install pipx and black
-enter this 
-export PATH="$HOME/.npm-global/bin:$PATH"
-
 then run
 
 source ~/.zshrc
 
 check with:- echo $EDITOR
 
+# nvim related programs installation
+
+pipx ensurepath
+
+pipx install black
+
+mkdir -p ~/.npm-global
+
+npm config set prefix '~/.npm-global'
+
+npm install -g prettier
+
+after installing pipx, black, prettier, npm
+
+run
+
+nvim ~/.zshrc
+
+enter this 
+
+export PATH="$HOME/.npm-global/bin:$PATH"
+
+then run
+
+source ~/.zshrc
 
 ### Git Setup
 
@@ -80,18 +85,18 @@ to check:- git config --list
 
 git clone https://github.com/divyansh-kataria/dotfiles.git
 
-this contains dotfiles for niri, noctalia, gtk-3.0, alacritty, kitty, mpv, nvim
+this contains dotfiles for alacritty, gtk-3.0, hypr, kitty, mpv, niri, nvim and waybar
 
 # apply required dotfiles using symlinks
+
+rm -rf ~/.config/kitty
+ln -s ~/dotfiles/kitty ~/.config/kitty
 
 rm -rf ~/.config/nvim
 ln -s ~/dotfiles/nvim ~/.config/nvim
 
 rm -rf ~/.config/niri
 ln -s ~/dotfiles/niri ~/.config/niri
-
-rm -rf ~/.config/kitty
-ln -s ~/dotfiles/kitty ~/.config/kitty
 
 rm -rf ~/.config/alacritty
 ln -s ~/dotfiles/alacritty ~/.config/alacritty
@@ -101,6 +106,12 @@ ln -s ~/dotfiles/mpv ~/.config/mpv
 
 rm -rf ~/.config/gtk-3.0
 ln -s ~/dotfiles/gtk-3.0 ~/.config/gtk-3.0
+
+rm -rf ~/.config/hypr
+ln -s ~/dotfiles/hypr ~/.config/hypr
+
+rm -rf ~/.config/waybar
+ln -s ~/dotfiles/waybar ~/.config/waybar
 
 to check, run:- ls -l ~/.config
 
@@ -159,6 +170,5 @@ resolvectl query cloudflare.com
 
 should see:- Data is authenticated: yes
 Data was acquired via encrypted transport: yes
-
 
 
