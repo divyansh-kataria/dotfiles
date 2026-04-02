@@ -11,6 +11,9 @@ return {
 					javascript = { "prettier" },
 					json = { "prettier" },
 					jsonc = { "prettier" },
+					css = { "prettier" },
+					html = { "prettier" },
+					markdown = { "prettier" },
 				},
 
 				format_on_save = {
