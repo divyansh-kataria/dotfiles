@@ -1,21 +1,23 @@
 return {
-  {
-    "stevearc/conform.nvim",
-    event = "BufWritePre",
+	{
+		"stevearc/conform.nvim",
+		event = "BufWritePre",
 
-    config = function()
-      require("conform").setup({
-        formatters_by_ft = {
-          lua = { "stylua" },
-          python = { "black" },
-          javascript = { "prettier" },
-        },
+		config = function()
+			require("conform").setup({
+				formatters_by_ft = {
+					lua = { "stylua" },
+					python = { "black" },
+					javascript = { "prettier" },
+					json = { "prettier" },
+					jsonc = { "prettier" },
+				},
 
-        format_on_save = {
-          timeout_ms = 500,
-          lsp_fallback = true,
-        },
-      })
-    end,
-  },
+				format_on_save = {
+					timeout_ms = 500,
+					lsp_fallback = true,
+				},
+			})
+		end,
+	},
 }
