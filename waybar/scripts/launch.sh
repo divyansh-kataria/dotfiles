@@ -2,3 +2,4 @@
 
 pkill waybar
 waybar &
+
