@@ -17,7 +17,7 @@ to /data partition
 
 ## GNOME
 
-paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd wl-clipboard gnome-system-monitor gnome-font-viewer brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx adw-gtk-theme seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd wl-clipboard gnome-system-monitor gnome-font-viewer librewolf-bin helium-browser-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 ## KDE
 
@@ -115,6 +115,17 @@ ln -s ~/dotfiles/waybar ~/.config/waybar
 
 to check, run:- ls -l ~/.config
 
+### Librewolf Setup
+
+disbale privacy.resistfingerpriting
+
+edit privacy.fingerpriting.protection.overrides
+
+add this:-
+
++AllTargets,-CSSPrefersColorScheme,-JSDateTimeUTC
+
+and restart browser
 
 ### Encrypted DNS Setup(Quad9)
 

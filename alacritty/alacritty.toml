@@ -20,7 +20,7 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 save_to_clipboard = true
 
 [cursor]
-style = "Beam"
+style = "Block"
 unfocused_hollow = true
 
 [mouse]
