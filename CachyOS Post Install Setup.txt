@@ -6,7 +6,7 @@ paru -Rns micro meld shelly
 
 ## Niri/w\Noctalia
 
-paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist wlsunset librewolf-bin helium-browser-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks gnome-themes-extra seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist wlsunset librewolf-bin helium-browser-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
