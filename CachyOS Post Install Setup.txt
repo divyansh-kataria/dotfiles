@@ -11,6 +11,7 @@ paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua py
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
+or through gnome-tweaks app(legacy applications)
 
 sudo nvim /etc/fstab
 then add
