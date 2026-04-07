@@ -3,10 +3,45 @@ TERM = "xterm-256color"
 
 [window]
 dynamic_padding = true
+decorations = "none"
 opacity = 0.9
+decorations_theme_variant = "Dark"
+startup_mode = "Maximized"
+
+[window.padding]
+x = 6
+y = 6
 
 [scrolling]
 history = 10000
+multiplier = 3
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.primary]
+background = "0x000000"
+foreground = "0xf8f8f2"
+
+[colors.normal]
+black   = "0x000000"
+red     = "0xff5555"
+green   = "0x50fa7b"
+yellow  = "0xf1fa8c"
+blue    = "0xbd93f9"
+magenta = "0xff79c6"
+cyan    = "0x8be9fd"
+white   = "0xbfbfbf"
+
+[colors.bright]
+black   = "0x4d4d4d"
+red     = "0xff6e6e"
+green   = "0x69ff94"
+yellow  = "0xffffa5"
+blue    = "0xd6acff"
+magenta = "0xff92df"
+cyan    = "0xa4ffff"
+white   = "0xffffff"
 
 [font]
 size = 11
@@ -21,12 +56,82 @@ save_to_clipboard = true
 
 [cursor]
 style = "Block"
+vi_mode_style = "None"
 unfocused_hollow = true
 
 [mouse]
 hide_when_typing = true
 
+[[mouse.bindings]]
+mouse = "Middle"
+action = "PasteSelection"
+
+[keyboard]
+[[keyboard.bindings]]
+key = "L"
+mods = "Control"
+action = "ClearLogNotice"
+
+[[keyboard.bindings]]
+key = "L"
+mods = "Control"
+mode = "~Vi"
+chars = "\f"
+
+[[keyboard.bindings]]
+key = "PageUp"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollPageUp"
+
+[[keyboard.bindings]]
+key = "PageDown"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollPageDown"
+
+[[keyboard.bindings]]
+key = "Home"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollToTop"
+
+[[keyboard.bindings]]
+key = "End"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollToBottom"
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "F"
+mods = "Control|Shift"
+action = "SearchForward"
+
+[[keyboard.bindings]]
+key = "B"
+mods = "Control|Shift"
+action = "SearchBackward"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+mode = "Vi"
+action = "ClearSelection"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
 
 [general]
 live_config_reload = true
-
