@@ -2,7 +2,7 @@
 
 * {
   all: unset;
-  font-family: "Google Sans Flex", "JetBrainsMono Nerd Font Propo";
+  font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo";
   font-size: 14px;
 }
 
@@ -51,7 +51,9 @@ tooltip {
   padding: 0px 6px;
   border-radius: 99px;
   margin: 0 2px;
-  transition: min-width 0.3s ease, background-color 0.2s ease;
+  transition:
+    min-width 0.3s ease,
+    background-color 0.2s ease;
   min-width: 7px;
 }
 
