@@ -20,7 +20,9 @@ to /data partition
 
 ## GNOME
 
-paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx adw-gtk-theme seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd wl-clipboard gnome-system-monitor gnome-font-viewer librewolf-bin helium-browser-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -Rns micro meld shelly decibels showtime snapshot
+
+paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx adw-gtk-theme seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd wl-clipboard gnome-font-viewer librewolf-bin helium-browser-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 ## KDE
 
