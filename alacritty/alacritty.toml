@@ -3,10 +3,10 @@ TERM = "xterm-256color"
 
 [window]
 dynamic_padding = true
-decorations = "none"
+# decorations = "none"
 opacity = 0.9
 decorations_theme_variant = "Dark"
-startup_mode = "Maximized"
+# startup_mode = "Maximized"
 
 [window.padding]
 x = 6
