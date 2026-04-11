@@ -1,26 +1,17 @@
 -- Theme
 return {
 	{
-		"catppuccin/nvim",
-		name = "catppuccin",
+		"ellisonleao/gruvbox.nvim",
 		priority = 1000,
 		lazy = false,
 
 		config = function()
-			require("catppuccin").setup({
-				flavour = "mocha",
-				transparent_background = true,
-
-				integrations = {
-					telescope = true,
-					cmp = true,
-					gitsigns = true,
-					which_key = true,
-					lsp_trouble = true,
-				},
+			require("gruvbox").setup({
+				contrast = "hard",
+				transparent_mode = true,
 			})
 
-			vim.cmd.colorscheme("catppuccin")
+			vim.cmd.colorscheme("gruvbox")
 		end,
 	},
 
@@ -30,7 +21,7 @@ return {
 		lazy = false,
 		config = function()
 			vim.api.nvim_set_hl(0, "NotifyBackground", {
-				bg = "#1e1e2e", -- Catppuccin base
+				bg = "#1d2021", -- Gruvbox hard bg
 			})
 
 			local notify = require("notify")

@@ -20,28 +20,28 @@ multiplier = 3
 draw_bold_text_with_bright_colors = true
 
 [colors.primary]
-background = "0x000000"
-foreground = "0xf8f8f2"
+background = "0x1d2021" # bg0_hard
+foreground = "0xebdbb2" # fg1
 
 [colors.normal]
-black   = "0x000000"
-red     = "0xff5555"
-green   = "0x50fa7b"
-yellow  = "0xf1fa8c"
-blue    = "0xbd93f9"
-magenta = "0xff79c6"
-cyan    = "0x8be9fd"
-white   = "0xbfbfbf"
+black   = "0x1d2021"
+red     = "0xcc241d"
+green   = "0x98971a"
+yellow  = "0xd79921"
+blue    = "0x458588"
+magenta = "0xb16286"
+cyan    = "0x689d6a"
+white   = "0xa89984"
 
 [colors.bright]
-black   = "0x4d4d4d"
-red     = "0xff6e6e"
-green   = "0x69ff94"
-yellow  = "0xffffa5"
-blue    = "0xd6acff"
-magenta = "0xff92df"
-cyan    = "0xa4ffff"
-white   = "0xffffff"
+black   = "0x928374"
+red     = "0xfb4934"
+green   = "0xb8bb26"
+yellow  = "0xfabd2f"
+blue    = "0x83a598"
+magenta = "0xd3869b"
+cyan    = "0x8ec07c"
+white   = "0xebdbb2"
 
 [font]
 size = 11

@@ -5,14 +5,12 @@ return {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 
 		config = function()
-			local theme = require("catppuccin.utils.lualine")("mocha")
-
 			require("lualine").setup({
 				options = {
-					theme = theme,
+					theme = "gruvbox", -- ✅ fixed
 					section_separators = "",
 					component_separators = "",
-					globalstatus = true, -- one statusline for all windows
+					globalstatus = true,
 				},
 
 				sections = {
