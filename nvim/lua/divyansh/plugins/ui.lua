@@ -96,8 +96,11 @@ return {
 		"rcarriga/nvim-notify",
 		lazy = false,
 		config = function()
+			local hl = vim.api.nvim_get_hl(0, { name = "Normal" })
+			local bg = hl.bg and string.format("#%06x", hl.bg) or "#000000"
+
 			vim.api.nvim_set_hl(0, "NotifyBackground", {
-				bg = "#1d2021",
+				bg = bg,
 			})
 
 			local notify = require("notify")
