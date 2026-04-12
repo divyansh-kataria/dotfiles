@@ -1,13 +1,21 @@
 return {
 	{
 		"nvim-lualine/lualine.nvim",
-		lazy = false, -- UI plugin → load immediately
+		lazy = false,
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 
 		config = function()
+			local theme_map = {
+				gruvbox = "gruvbox",
+				["rose-pine"] = "rose-pine",
+				["tokyo-night"] = "tokyonight",
+				catppuccin = "auto",
+				dracula = "dracula",
+			}
+
 			require("lualine").setup({
 				options = {
-					theme = "gruvbox", -- ✅ fixed
+					theme = theme_map[vim.g.theme] or "auto",
 					section_separators = "",
 					component_separators = "",
 					globalstatus = true,

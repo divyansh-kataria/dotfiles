@@ -1,17 +1,93 @@
 -- Theme
 return {
 	{
+		-- 🟤 Gruvbox (main)
 		"ellisonleao/gruvbox.nvim",
 		priority = 1000,
 		lazy = false,
+		enabled = function()
+			return vim.g.theme == "gruvbox"
+		end,
 
 		config = function()
 			require("gruvbox").setup({
 				contrast = "hard",
 				transparent_mode = true,
 			})
-
 			vim.cmd.colorscheme("gruvbox")
+		end,
+	},
+
+	{
+		-- 🌸 Rosé Pine (soft)
+		"rose-pine/neovim",
+		name = "rose-pine",
+		priority = 1000,
+		lazy = false,
+		enabled = function()
+			return vim.g.theme == "rose-pine"
+		end,
+
+		config = function()
+			require("rose-pine").setup({
+				disable_background = true,
+			})
+			vim.cmd.colorscheme("rose-pine")
+		end,
+	},
+
+	{
+		-- 🌌 Tokyo Night (clean)
+		"folke/tokyonight.nvim",
+		priority = 1000,
+		lazy = false,
+		enabled = function()
+			return vim.g.theme == "tokyo-night"
+		end,
+
+		config = function()
+			require("tokyonight").setup({
+				transparent = true,
+			})
+			vim.cmd.colorscheme("tokyonight")
+		end,
+	},
+
+	{
+		-- 🧁 Catppuccin Mocha (modern)
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
+		lazy = false,
+		enabled = function()
+			return vim.g.theme == "catppuccin"
+		end,
+
+		config = function()
+			require("catppuccin").setup({
+				flavour = "mocha",
+				transparent_background = true,
+			})
+			vim.cmd.colorscheme("catppuccin")
+		end,
+	},
+
+	{
+		-- 🧛 Dracula (classic)
+		"dracula/vim",
+		name = "dracula",
+		priority = 1000,
+		lazy = false,
+		enabled = function()
+			return vim.g.theme == "dracula"
+		end,
+
+		config = function()
+			vim.cmd.colorscheme("dracula")
+
+			-- Dracula has no native transparency → minimal fix
+			vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+			vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 		end,
 	},
 
@@ -21,7 +97,7 @@ return {
 		lazy = false,
 		config = function()
 			vim.api.nvim_set_hl(0, "NotifyBackground", {
-				bg = "#1d2021", -- Gruvbox hard bg
+				bg = "#1d2021",
 			})
 
 			local notify = require("notify")

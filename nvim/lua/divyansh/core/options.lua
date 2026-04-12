@@ -1,3 +1,5 @@
+vim.g.theme = "gruvbox"
+
 local opt = vim.opt
 
 -- line numbers
@@ -33,5 +35,3 @@ opt.clipboard = "unnamedplus"
 -- performance
 opt.updatetime = 250
 opt.timeoutlen = 400
-
-
