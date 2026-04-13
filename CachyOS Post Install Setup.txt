@@ -1,5 +1,61 @@
 ##### CachyOS Post Install Setup[Niri/w\Noctalia + GNOME + KDE]
 
+### Encrypted DNS Setup(Quad9)
+
+1. Configure systemd-resolved
+
+sudo vim /etc/systemd/resolved.conf
+
+Paste this:-
+
+[Resolve]
+DNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
+FallbackDNS=1.1.1.1#cloudflare-dns.com 2606:4700:4700::1111#cloudflare-dns.com
+DNSOverTLS=yes
+
+2. Restart resolver
+
+sudo systemctl restart systemd-resolved
+
+3. Make NetworkManager use systemd-resolved
+
+sudo vim /etc/NetworkManager/conf.d/dns.conf
+
+Paste:-
+
+[main]
+dns=systemd-resolved
+
+4. Ignore router DNS
+
+nmcli connection modify "Wired connection 1" ipv4.ignore-auto-dns yes ipv6.ignore-auto-dns yes
+
+to check connection name(if not "Wired Connection 1") then run:- nmcli connection show
+
+5. Restart connection
+
+nmcli connection down "Wired connection 1" && nmcli connection up "Wired connection 1"
+
+6. Link resolv.conf to systemd-resolved
+
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+
+sudo systemctl restart systemd-resolved
+
+7. Verify
+
+resolvectl status
+
+should see quad9 dns and stub and dnsovertls enabled and only in global and no ip in eno1
+
+8. Final test
+
+resolvectl query cloudflare.com
+
+should see:- Data is authenticated: yes
+Data was acquired via encrypted transport: yes
+
+
 ### Apps Installation & DE specific tweaks
 
 ## Niri/w\Noctalia
@@ -26,7 +82,9 @@ paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua py
 
 ## KDE
 
-paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard librewolf-bin brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -Rns micro meld shelly kwrite
+
+paru -S vlc yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard librewolf-bin brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 ### Terminal Shell Setup
 
@@ -34,11 +92,13 @@ paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua py
 
 chsh -s /usr/bin/zsh
 
-then run
+then run zsh and complete p10k setup
+
+then
 
 nvim ~/.zshrc
 
-paste this in bottom:-
+paste this at bottom:-
 
 # Default editor
 export EDITOR=nvim
@@ -131,60 +191,4 @@ add this:-
 +AllTargets,-CSSPrefersColorScheme,-JSDateTimeUTC
 
 and restart browser
-
-### Encrypted DNS Setup(Quad9)
-
-1. Configure systemd-resolved
-
-sudoedit nvim /etc/systemd/resolved.conf
-
-Paste this:-
-
-[Resolve]
-DNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
-FallbackDNS=1.1.1.1#cloudflare-dns.com 2606:4700:4700::1111#cloudflare-dns.com
-DNSOverTLS=yes
-
-2. Restart resolver
-
-sudo systemctl restart systemd-resolved
-
-3. Make NetworkManager use systemd-resolved
-
-sudoedit nvim /etc/NetworkManager/conf.d/dns.conf
-
-Paste:-
-
-[main]
-dns=systemd-resolved
-
-4. Ignore router DNS
-
-nmcli connection modify "Wired connection 1" ipv4.ignore-auto-dns yes ipv6.ignore-auto-dns yes
-
-to check connection name(if not "Wired Connection 1") then run:- nmcli connection show
-
-5. Restart connection
-
-nmcli connection down "Wired connection 1" && nmcli connection up "Wired connection 1"
-
-6. Link resolv.conf to systemd-resolved
-
-sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
-
-sudo systemctl restart systemd-resolved
-
-7. Verify
-
-resolvectl status
-
-should see quad9 dns and stub and dnsovertls enabled and only in global and no ip in eno1
-
-8. Final test
-
-resolvectl query cloudflare.com
-
-should see:- Data is authenticated: yes
-Data was acquired via encrypted transport: yes
-
 
