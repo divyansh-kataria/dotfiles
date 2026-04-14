@@ -14,6 +14,8 @@ return {
 					css = { "prettier" },
 					html = { "prettier" },
 					markdown = { "prettier" },
+					cpp = { "clang_format" },
+					c = { "clang_format" },
 				},
 
 				format_on_save = {

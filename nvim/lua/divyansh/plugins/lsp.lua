@@ -18,6 +18,7 @@ return {
 					"pyright",
 					"ts_ls",
 					"cssls",
+					"clangd",
 				},
 			})
 		end,
@@ -42,6 +43,10 @@ return {
 			vim.lsp.config("cssls", {})
 			vim.lsp.config("jsonls", {})
 			vim.lsp.config("html", {})
+			vim.lsp.config("clangd", {
+				cmd = { "clangd", "--background-index" },
+				capabilities = require("cmp_nvim_lsp").default_capabilities(),
+			})
 
 			vim.lsp.enable(require("mason-lspconfig").get_installed_servers())
 		end,
