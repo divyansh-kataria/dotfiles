@@ -62,7 +62,7 @@ Data was acquired via encrypted transport: yes
 
 paru -Rns micro meld shelly
 
-paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist wlsunset librewolf-bin brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist wlsunset brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
@@ -78,13 +78,13 @@ to /data partition
 
 paru -Rns micro meld shelly decibels showtime snapshot
 
-paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx adw-gtk-theme seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd wl-clipboard gnome-font-viewer librewolf-bin brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx adw-gtk-theme seahorse qbittorrent blanket extension-manager ttf-jetbrains-mono-nerd wl-clipboard gnome-font-viewer brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 ## KDE
 
 paru -Rns micro meld shelly kwrite
 
-paru -S vlc yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard librewolf-bin brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S vlc yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 ### Terminal Shell Setup
 
@@ -179,16 +179,4 @@ rm -rf ~/.config/waybar
 ln -s ~/dotfiles/waybar ~/.config/waybar
 
 to check, run:- ls -l ~/.config
-
-### Librewolf Setup
-
-disbale privacy.resistfingerpriting
-
-edit privacy.fingerpriting.protection.overrides
-
-add this:-
-
-+AllTargets,-CSSPrefersColorScheme,-JSDateTimeUTC
-
-and restart browser
 
