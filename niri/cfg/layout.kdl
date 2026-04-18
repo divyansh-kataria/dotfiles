@@ -11,5 +11,11 @@
         }
 
         struts {}
+
+        border {
+            width 2
+            active-color "#ffffff22"
+            inactive-color "#ffffff11"
+        }
     }
 
