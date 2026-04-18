@@ -3,6 +3,14 @@
         open-maximized true
     }
 
+// Global Blur
+//    window-rule {
+//        background-effect {
+//            blur true
+//            xray false
+//        }
+//   }
+
 // Layer Rules //
     layer-rule {
         match namespace="^noctalia-wallpaper*"
