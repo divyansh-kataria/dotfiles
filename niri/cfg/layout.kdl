@@ -12,10 +12,9 @@
 
         struts {}
 
-        border {
-            width 2
-            active-color "#ffffff22"
-            inactive-color "#ffffff11"
+        focus-ring {
+            width 4
+            active-color "#7aa2f7aa"
         }
     }
 
