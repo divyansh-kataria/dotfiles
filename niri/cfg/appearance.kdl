@@ -1,0 +1,35 @@
+// Cursor //
+    cursor {
+        xcursor-theme "Bibata-Modern-Ice"
+        xcursor-size 20
+    }
+
+// Blur engine //
+//    blur {
+//        passes 3
+//        offset 3
+//        noise 0.02
+//        saturation 1.4
+//}
+
+// Global Window Visuals //
+    window-rule {
+        geometry-corner-radius 20
+        clip-to-geometry true
+    }
+
+// Global Opacity and Blur //
+    window-rule {
+        match {}
+        opacity 0.95
+        //background-effect {
+        //    blur true
+        //}
+    }
+
+// App-specific tweaks
+    window-rule {
+        match app-id="kitty"
+        opacity 0.8
+    }
+
