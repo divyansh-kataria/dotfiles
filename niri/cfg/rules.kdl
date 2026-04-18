@@ -8,10 +8,12 @@
         match namespace="^noctalia-wallpaper*"
         place-within-backdrop true
     }
-    
+
 //    layer-rule {
-//        match namespace=".*"
+//        match namespace="^noctalia-(bar|background|launcher-overlay|dock|notification)-.*$"
 //        background-effect {
 //            blur true
+//            xray false
 //        }
 //    }
+
