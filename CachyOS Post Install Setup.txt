@@ -64,6 +64,14 @@ paru -Rns micro meld shelly
 
 paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist wlsunset brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
+## Hyprland
+
+paru -Rns micro meld shelly
+
+paru -S hyprland uwsm xdg-desktop-portal-hyprland xdg-desktop-portal-gtk grim slurp nautilus gnome-keyring libsecret noctalia-shell sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist wlsunset brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+
+# For Niri and Hyprland
+
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
