@@ -19,18 +19,15 @@
     }
 
 // App-specific tweaks
-    window-rule {
-        match app-id="kitty"
-        opacity 0.88
-    }
+
 
 // Global Popup Blur //
 //    window-rule {
 //        popups {
-//            opacity 0.88          // Sweet spot: 0.85–0.92. Lower = more blur visible
-//            background-effect {   // ← will work after next release
+//            opacity 0.88
+//            background-effect {
 //                blur true
-//                xray false        // false = prettier real blur (macOS style)
+//                xray false
 //            }
 //            geometry-corner-radius 10
 //        }
