@@ -4,7 +4,7 @@
         xcursor-size 20
     }
 
-// Blur engine //
+// Blur //
 //    blur {
 //        passes 3
 //        offset 3
