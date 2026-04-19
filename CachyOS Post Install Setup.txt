@@ -82,7 +82,7 @@ paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua py
 
 ## KDE
 
-paru -Rns micro meld shelly kwrite
+paru -Rns micro meld shelly
 
 paru -S vlc yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
@@ -152,28 +152,37 @@ git clone https://github.com/divyansh-kataria/dotfiles.git
 
 this contains dotfiles for alacritty, gtk-3.0, hypr, kitty, mpv, niri, nvim and waybar
 
-# apply required dotfiles using symlinks
+# Essentials:-
 
 rm -rf ~/.config/kitty
 ln -s ~/dotfiles/kitty ~/.config/kitty
 
-rm -rf ~/.config/nvim
-ln -s ~/dotfiles/nvim ~/.config/nvim
-
-rm -rf ~/.config/niri
-ln -s ~/dotfiles/niri ~/.config/niri
-
 rm -rf ~/.config/alacritty
 ln -s ~/dotfiles/alacritty ~/.config/alacritty
+
+rm -rf ~/.config/nvim
+ln -s ~/dotfiles/nvim ~/.config/nvim
 
 rm -rf ~/.config/mpv
 ln -s ~/dotfiles/mpv ~/.config/mpv
 
+# Niri Specific:-
+
+rm -rf ~/.config/niri
+ln -s ~/dotfiles/niri ~/.config/niri
+
+# Not for KDE
+
 rm -rf ~/.config/gtk-3.0
 ln -s ~/dotfiles/gtk-3.0 ~/.config/gtk-3.0
 
+# Hyprland Specific:-
+
 rm -rf ~/.config/hypr
 ln -s ~/dotfiles/hypr ~/.config/hypr
+
+rm -rf ~/.config/uwsm
+ln -s ~/dotfiles/uwsm ~/.config/uwsm
 
 rm -rf ~/.config/waybar
 ln -s ~/dotfiles/waybar ~/.config/waybar
