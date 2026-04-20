@@ -1,5 +1,4 @@
 # Sourcing files
-include ~/.config/sway/cfg/env.conf
 include ~/.config/sway/cfg/programs.conf
 include ~/.config/sway/cfg/input.conf
 include ~/.config/sway/cfg/display.conf
