@@ -1,3 +1,3 @@
-My dotfiles of alacritty, gtk3, Hyprland, kitty, mpv, niri, nvim and waybar
+My dotfiles of alacritty, gtk3, hyprland, kitty, mpv, niri, nvim, sway, uwsm and waybar
 
 Author - Divyansh Kataria
