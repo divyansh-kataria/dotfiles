@@ -7,9 +7,9 @@
 // Blur //
     blur {
         passes 2
-        offset 3
+        offset 6
         noise 0.02
-        saturation 1.3
+        saturation 1.5
     }
 
 // Global Window Visuals //
@@ -25,14 +25,14 @@
         }
     
 // Global Popup Blur //
-        popups {
-            opacity 0.88
-            geometry-corner-radius 12
-            background-effect {
-                blur true
-                xray true
-            }
-        }
+//        popups {
+//            opacity 0.85
+//            geometry-corner-radius 15
+//            background-effect {
+//                blur true
+//                xray true
+//            }
+//        }
         
 // Global Shadow //
         shadow {
@@ -55,9 +55,15 @@
     }
 
     window-rule {
-        match app-id=r#"^(zen|firefox)$"#
-        opacity 0.95
+        match title="^Picture-in-Picture$"
+        open-floating true
+        opacity 1.0
     }
+
+//    window-rule {
+//        match app-id=r#"^(zen|firefox)$"#
+//        opacity 0.95
+//    }
 
     window-rule {
         match app-id=r#"^org\.gnome\.Nautilus$"#
