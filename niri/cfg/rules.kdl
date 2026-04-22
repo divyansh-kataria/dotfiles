@@ -3,25 +3,31 @@
         open-maximized true
     }
 
-// Global Blur
-//    window-rule {
-//        background-effect {
-//            blur true
-//            xray false
-//        }
-//    }
-
 // Layer Rules //
     layer-rule {
         match namespace="^noctalia-wallpaper*"
         place-within-backdrop true
     }
 
-//    layer-rule {
-//        match namespace="^noctalia-(bar|background|launcher-overlay|dock|notification)-.*$"
-//        background-effect {
-//            blur true
-//            xray false
-//        }
-//    }
+    layer-rule {
+        match namespace="^noctalia-.*$"
+        background-effect {
+            blur true
+            xray true
+        }
+        popups {
+            background-effect {
+                blur true
+                xray true
+            }
+        }
+    }
+    
+    layer-rule {
+        match namespace="^slurp$"
+        background-effect {
+            blur true
+            xray true
+        }
+    }
 
