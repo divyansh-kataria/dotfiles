@@ -9,25 +9,17 @@
         place-within-backdrop true
     }
 
-    layer-rule {
-        match namespace="^noctalia-.*$"
-        background-effect {
-            blur true
-            xray true
-        }
-        popups {
-            background-effect {
-                blur true
-                xray true
-            }
-        }
-    }
-    
-    layer-rule {
-        match namespace="^slurp$"
-        background-effect {
-            blur true
-            xray true
-        }
-    }
+//    layer-rule {
+//        match namespace="^noctalia-.*$"
+//        background-effect {
+//            blur true
+//            xray true
+//        }
+//        popups {
+//            background-effect {
+//                blur true
+//                xray true
+//            }
+//        }
+//    }
 
