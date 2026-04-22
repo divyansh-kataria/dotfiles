@@ -1,29 +1,29 @@
 // Cursor //
-    cursor {
-        xcursor-theme "Bibata-Modern-Ice"
-        xcursor-size 20
-    }
+cursor {
+    xcursor-theme "Bibata-Modern-Ice"
+    xcursor-size 20
+}
 
 // Blur //
-    blur {
-        passes 2
-        offset 6
-        noise 0.02
-        saturation 1.5
-    }
+blur {
+    passes 2
+    offset 6
+    noise 0.02
+    saturation 1.5
+}
 
 // Global Window Visuals //
-    window-rule {
-        geometry-corner-radius 20
-        clip-to-geometry true
-        draw-border-with-background false
-    
+window-rule {
+    geometry-corner-radius 20
+    clip-to-geometry true
+    draw-border-with-background false
+
 // Global Blur
-        background-effect {
-            blur true
-            xray true
-        }
-    
+    background-effect {
+        blur true
+        xray true
+    }
+
 // Global Popup Blur //
 //        popups {
 //            opacity 0.85
@@ -33,52 +33,52 @@
 //                xray true
 //            }
 //        }
-        
+    
 // Global Shadow //
-        shadow {
-            on
-            softness 20
-            spread 1
-            offset x=0 y=4
-            color "#00000070"
-        }
+    shadow {
+        on
+        softness 20
+        spread 1
+        offset x=0 y=4
+        color "#00000070"
     }
+}
 
-    window-rule {
-        match is-focused=false
-        opacity 0.75
-    }
+window-rule {
+    match is-focused=false
+    opacity 0.75
+}
 
-    window-rule {
-        match is-floating=true
-        geometry-corner-radius 24
-    }
+window-rule {
+    match is-floating=true
+    geometry-corner-radius 24
+}
 
-    window-rule {
-        match title="^Picture-in-Picture$"
-        open-floating true
-        opacity 1.0
-    }
+window-rule {
+    match title="^Picture-in-Picture$"
+    open-floating true
+    opacity 1.0
+}
 
 //    window-rule {
 //        match app-id=r#"^(zen|firefox)$"#
 //        opacity 0.95
 //    }
 
-    window-rule {
-        match app-id=r#"^org\.gnome\.Nautilus$"#
-        opacity 0.9
-    }
+window-rule {
+    match app-id=r#"^org\.gnome\.Nautilus$"#
+    opacity 0.9
+}
 
-    window-rule {
-        match app-id="code"
-        open-maximized true
-        opacity 0.88
-    }
+window-rule {
+    match app-id="code"
+    open-maximized true
+    opacity 0.88
+}
 
-    window-rule {
-        match app-id="steam"
-        open-maximized true
-        opacity 0.9
-    }
+window-rule {
+    match app-id="steam"
+    open-maximized true
+    opacity 0.9
+}
 
