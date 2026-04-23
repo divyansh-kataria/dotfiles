@@ -54,12 +54,6 @@ window-rule {
     geometry-corner-radius 24
 }
 
-window-rule {
-    match title="^Picture-in-Picture$"
-    open-floating true
-    opacity 1.0
-}
-
 //    window-rule {
 //        match app-id=r#"^(zen|firefox)$"#
 //        opacity 0.95

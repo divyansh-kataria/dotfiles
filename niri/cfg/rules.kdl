@@ -23,3 +23,10 @@ layer-rule {
 //        }
 //    }
 
+// Picture-in-Picture //
+window-rule {
+    match title="(?i)^picture[- ]?in[- ]?picture"
+    open-floating true
+    opacity 1.0
+}
+
