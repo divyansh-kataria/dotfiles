@@ -3,6 +3,7 @@ include ~/.config/sway/cfg/programs.conf
 include ~/.config/sway/cfg/input.conf
 include ~/.config/sway/cfg/display.conf
 include ~/.config/sway/cfg/appearance.conf
+include ~/.config/sway/cfg/swayfx.conf
 include ~/.config/sway/cfg/rules.conf
 include ~/.config/sway/cfg/keybinds.conf
 include ~/.config/sway/cfg/autostart.conf
