@@ -5,12 +5,12 @@ cursor {
 }
 
 // Blur //
-blur {
-    passes 2
-    offset 6
-    noise 0.02
-    saturation 1.5
-}
+//blur {
+//    passes 2
+//    offset 3
+//    noise 0.02
+//    saturation 1.5
+//}
 
 // Global Window Visuals //
 window-rule {
@@ -19,10 +19,10 @@ window-rule {
     draw-border-with-background false
 
 // Global Blur
-    background-effect {
-        blur true
-        xray true
-    }
+//    background-effect {
+//        blur true
+//        xray true
+//    }
 
 // Global Popup Blur //
 //        popups {
@@ -54,11 +54,6 @@ window-rule {
     geometry-corner-radius 24
 }
 
-//    window-rule {
-//        match app-id=r#"^(zen|firefox)$"#
-//        opacity 0.95
-//    }
-
 window-rule {
     match app-id=r#"^org\.gnome\.Nautilus$"#
     opacity 0.9
@@ -67,12 +62,12 @@ window-rule {
 window-rule {
     match app-id="code"
     open-maximized true
-    opacity 0.88
+//    opacity 0.88
 }
 
 window-rule {
     match app-id="steam"
     open-maximized true
-    opacity 0.9
+//    opacity 0.9
 }
 
