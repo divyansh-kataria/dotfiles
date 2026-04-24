@@ -1,9 +1,9 @@
-# Core Session
-export XDG_CURRENT_DESKTOP=sway
+# For Sway Only
+# export XDG_CURRENT_DESKTOP=sway
 
 export XCURSOR_THEME=Bibata-Modern-Ice
 export XCURSOR_SIZE=20
-# export HYPRCURSOR_SIZE=20
+export HYPRCURSOR_SIZE=20
 
 # Toolkit backends
 export GDK_BACKEND=wayland,x11,*
@@ -14,3 +14,4 @@ export CLUTTER_BACKEND=wayland
 # Qt specific
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export QT_QPA_PLATFORMTHEME=gtk3
+
