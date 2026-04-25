@@ -68,6 +68,10 @@ paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua py
 
 paru -Rns micro meld shelly
 
+paru -S hyprland uwsm xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpicker hyprlock hypridle hyprcursor hyprsunset hyprpolkitagent waybar mako fuzzel yazi wlogout awww grim slurp nautilus gnome-keyring libsecret sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+
+# With Noctalia:-
+
 paru -S hyprland uwsm xdg-desktop-portal-hyprland xdg-desktop-portal-gtk grim slurp nautilus gnome-keyring libsecret noctalia-shell sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist wlsunset brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 # Sway
