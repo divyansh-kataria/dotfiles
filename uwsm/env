@@ -3,6 +3,7 @@
 
 export XCURSOR_THEME=Bibata-Modern-Ice
 export XCURSOR_SIZE=20
+export HYPRCURSOR_THEME=Bibata-Modern-Ice
 export HYPRCURSOR_SIZE=20
 
 # Toolkit backends
