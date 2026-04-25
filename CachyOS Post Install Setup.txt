@@ -80,6 +80,16 @@ paru -Rns micro meld shelly
 
 paru -S sway uwsm xdg-desktop-portal-wlr xdg-desktop-portal-gtk grim slurp nautilus gnome-keyring libsecret noctalia-shell sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist wlsunset brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
+# For Hyprland
+
+# Enabling systemd services(uwsm)
+
+systemctl --user daemon-reload
+
+systemctl --user enable --now hyprpolkitagent.service
+
+systemctl --user enable --now hypridle.service
+
 # For Niri, Sway and Hyprland
 
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
