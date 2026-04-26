@@ -40,7 +40,7 @@ window-rule {
         softness 20
         spread 1
         offset x=0 y=4
-        color "#00000070"
+        color "#bb9af744"
     }
 }
 
