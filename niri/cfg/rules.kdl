@@ -55,7 +55,7 @@ window-rule {
 
     open-floating true
 
-    opacity 0.88
+//    opacity 0.88
 }
 
 // Layer Rules //
