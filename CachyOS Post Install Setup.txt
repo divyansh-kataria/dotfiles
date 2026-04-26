@@ -68,7 +68,7 @@ paru -S vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua py
 
 paru -Rns micro meld shelly
 
-paru -S hyprland uwsm xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpicker hyprlock hypridle hyprcursor hyprsunset hyprpolkitagent waybar mako rofi yazi wlogout awww grim slurp nautilus gnome-keyring libsecret sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S hyprland uwsm xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpicker hyprlock hypridle hyprcursor hyprsunset hyprpolkitagent waybar mako rofi yazi wlogout awww brightnessctl grim slurp nautilus gnome-keyring libsecret sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd wl-clipboard cliphist brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
 # For Niri and Hyprland
 
