@@ -13,6 +13,7 @@ binds {
     Mod+Space                           hotkey-overlay-title="Open App Launcher: Noctalia Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Mod+Shift+N                         hotkey-overlay-title="Open Control Center" { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
     Mod+I                               hotkey-overlay-title="Open Settings Panel" { spawn-sh "qs -c noctalia-shell ipc call settings toggle"; }
+    Mod+Shift+Return                    hotkey-overlay-title="Open Wallpaper Selector" { spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle"; }
     Mod+V                               hotkey-overlay-title="Clipboard Manager" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
     Mod+Period                          hotkey-overlay-title="Emoji Selector" { spawn-sh "qs -c noctalia-shell ipc call launcher emoji"; }
     Mod+Shift+M                         hotkey-overlay-title="System Monitor" { spawn-sh "qs -c noctalia-shell ipc call systemMonitor toggle"; }
