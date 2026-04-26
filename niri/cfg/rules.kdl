@@ -3,6 +3,28 @@ window-rule {
     open-maximized true
 }
 
+window-rule {
+    match is-floating=true
+    geometry-corner-radius 24
+}
+
+window-rule {
+    match app-id=r#"^org\.gnome\.Nautilus$"#
+//    opacity 0.9
+}
+
+window-rule {
+    match app-id="code"
+    open-maximized true
+//    opacity 0.88
+}
+
+window-rule {
+    match app-id="steam"
+    open-maximized true
+//    opacity 0.9
+}
+
 // Layer Rules //
 layer-rule {
     match namespace="^noctalia-wallpaper*"
