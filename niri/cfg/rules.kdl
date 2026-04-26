@@ -5,20 +5,57 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"^org\.gnome\.Nautilus$"#
-//    opacity 0.9
+    match app-id=r#"^org\.gnome\..*"#
+    match app-id="org.cachyos.hello"
+    match app-id="org.cachyos.KernelManager"
+    match app-id="org.cachyos.cachyos-pi"
+    match app-id="localsend"
+    match app-id="thunderbird"
+    match app-id="obsidian"
+    match app-id="org.qbittorrent.qBittorrent"
+    match app-id="btrfs-assistant"
+    match app-id="io.ente.auth"
+    match app-id="org.pwmt.zathura"
+//    opacity 0.88
+}
+
+// Browsers maximized rule
+window-rule {
+    match app-id="firefox"
+    match app-id="librewolf"
+    match app-id="zen"
+    match app-id="brave"
+    match app-id="helium"
+    open-maximized true
 }
 
 window-rule {
     match app-id="code"
+    match app-id="steam"
+    match app-id="Spotify"
+    match app-id="discord"
     open-maximized true
 //    opacity 0.88
 }
 
 window-rule {
-    match app-id="steam"
+    match app-id="vlc"
     open-maximized true
-//    opacity 0.9
+}
+
+window-rule {
+    match app-id="mpv"
+    open-fullscreen true
+}
+
+// Open Floating with blur
+window-rule {
+    match app-id="org.pulseaudio.pavucontrol"
+    match app-id="com.rafaelmardojai.Blanket"
+
+    open-floating true
+
+    opacity 0.88
 }
 
 // Layer Rules //
