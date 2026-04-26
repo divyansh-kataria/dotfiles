@@ -1,9 +1,5 @@
 // Window Rules //
 window-rule {
-    open-maximized true
-}
-
-window-rule {
     match is-floating=true
     geometry-corner-radius 24
 }
