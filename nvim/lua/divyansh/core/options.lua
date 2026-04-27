@@ -1,4 +1,4 @@
-vim.g.theme = "gruvbox"
+vim.g.theme = "catppuccin"
 
 local opt = vim.opt
 
