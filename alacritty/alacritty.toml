@@ -4,9 +4,9 @@ live_config_reload = true
 # ===== THEMES =====
 
 # import = ["~/.config/alacritty/themes/ayu_dark.toml"]
-# import = ["~/.config/alacritty/themes/catppuccin_mocha.toml"]
+import = ["~/.config/alacritty/themes/catppuccin_mocha.toml"]
 # import = ["~/.config/alacritty/themes/dracula.toml"]
-import = ["~/.config/alacritty/themes/gruvbox_dark.toml"]
+# import = ["~/.config/alacritty/themes/gruvbox_dark.toml"]
 # import = ["~/.config/alacritty/themes/rose_pine.toml"]
 # import = ["~/.config/alacritty/themes/tokyo_night.toml"]
 
