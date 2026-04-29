@@ -5,7 +5,7 @@
 -- Curves
 hl.curve("superSilk", {
 	type = "bezier",
-	points = { { 0.16, 1 }, { 0.3, 1 } },
+	points = { { 0.22, 1 }, { 0.36, 1 } },
 })
 
 hl.curve("softBounce", {
@@ -22,32 +22,32 @@ hl.curve("linear", {
 hl.animation({
 	leaf = "global",
 	enabled = true,
-	speed = 10,
+	speed = 1,
 	bezier = "linear",
 })
 
 hl.animation({
 	leaf = "windows",
 	enabled = true,
-	speed = 7,
+	speed = 5,
 	bezier = "superSilk",
-	style = "popin 85%",
+	style = "popin 90%",
 })
 
 hl.animation({
 	leaf = "windowsIn",
 	enabled = true,
-	speed = 7,
+	speed = 5,
 	bezier = "softBounce",
-	style = "popin 85%",
+	style = "popin 92%",
 })
 
 hl.animation({
 	leaf = "windowsOut",
 	enabled = true,
-	speed = 5,
+	speed = 3,
 	bezier = "superSilk",
-	style = "popin 80%",
+	style = "popin 90%",
 })
 
 hl.animation({
@@ -61,31 +61,29 @@ hl.animation({
 hl.animation({
 	leaf = "fadeIn",
 	enabled = true,
-	speed = 5,
+	speed = 2,
 	bezier = "linear",
 })
 
 hl.animation({
 	leaf = "fadeOut",
 	enabled = true,
-	speed = 5,
+	speed = 2,
 	bezier = "linear",
 })
 
 hl.animation({
 	leaf = "layers",
 	enabled = true,
-	speed = 6,
-	bezier = "superSilk",
-	style = "slide top",
+	speed = 3,
+	bezier = "linear",
 })
 
 hl.animation({
 	leaf = "layersIn",
 	enabled = true,
-	speed = 6,
-	bezier = "superSilk",
-	style = "slide top",
+	speed = 2,
+	bezier = "linear",
 })
 
 hl.animation({
