@@ -1,0 +1,11 @@
+-- Soucing Files
+require("cfg.programs")
+require("cfg.display")
+require("cfg.input")
+require("cfg.appearance")
+require("cfg.animations")
+require("cfg.layout")
+require("cfg.misc")
+require("cfg.rules")
+require("cfg.keybinds")
+require("cfg.autostart")
