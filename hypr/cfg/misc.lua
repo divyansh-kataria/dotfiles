@@ -8,10 +8,6 @@ hl.config({
 		disable_hyprland_logo = true,
 		disable_splash_rendering = true,
 
-		--PERFORMANCE: VFR (Variable Frame Rate)
-		-- Saves GPU/Battery by only rendering when things move.
-		vfr = true,
-
 		-- Keeps mouse from "warping" weirdly during certain actions.
 		animate_mouse_windowdragging = true,
 
