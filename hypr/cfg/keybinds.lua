@@ -56,16 +56,16 @@ hl.bind(mod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- 6. RESIZING
-hl.bind(mod .. " + minus", hl.dsp.window.resize({ x = -40, y = 0 }), { repeating = true })
-hl.bind(mod .. " + equal", hl.dsp.window.resize({ x = 40, y = 0 }), { repeating = true })
-hl.bind(mod .. " + SHIFT + minus", hl.dsp.window.resize({ x = 0, y = -40 }), { repeating = true })
-hl.bind(mod .. " + SHIFT + equal", hl.dsp.window.resize({ x = 0, y = 40 }), { repeating = true })
+--hl.bind(mod .. " + minus", hl.dsp.window.resize({ x = -40, y = 0 }), { repeating = true })
+--hl.bind(mod .. " + equal", hl.dsp.window.resize({ x = 40, y = 0 }), { repeating = true })
+--hl.bind(mod .. " + SHIFT + minus", hl.dsp.window.resize({ x = 0, y = -40 }), { repeating = true })
+--hl.bind(mod .. " + SHIFT + equal", hl.dsp.window.resize({ x = 0, y = 40 }), { repeating = true })
 
 -- 7. MONITOR CONTROL
-hl.bind(mod .. " + ALT + h", hl.dsp.focus({ monitor = "l" }))
-hl.bind(mod .. " + ALT + l", hl.dsp.focus({ monitor = "r" }))
-hl.bind(mod .. " + ALT + SHIFT + h", hl.dsp.window.move({ monitor = "l" }))
-hl.bind(mod .. " + ALT + SHIFT + l", hl.dsp.window.move({ monitor = "r" }))
+--hl.bind(mod .. " + ALT + h", hl.dsp.focus({ monitor = "l" }))
+--hl.bind(mod .. " + ALT + l", hl.dsp.focus({ monitor = "r" }))
+--hl.bind(mod .. " + ALT + SHIFT + h", hl.dsp.window.move({ monitor = "l" }))
+--hl.bind(mod .. " + ALT + SHIFT + l", hl.dsp.window.move({ monitor = "r" }))
 
 -- 8. MULTIMEDIA & BRIGHTNESS
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(ipc .. " volume increase"), { locked = true, repeating = true })
