@@ -2,6 +2,7 @@
 require("cfg.display")
 require("cfg.programs")
 require("cfg.autostart")
+require("cfg.env")
 require("cfg.appearance")
 require("cfg.animations")
 require("cfg.layout")
