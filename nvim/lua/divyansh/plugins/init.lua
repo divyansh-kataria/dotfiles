@@ -3,7 +3,6 @@ return {
 	{ import = "divyansh.plugins.ui" },
 
 	-- Core features
-	{ import = "divyansh.plugins.treesitter" },
 	{ import = "divyansh.plugins.telescope" },
 	{ import = "divyansh.plugins.lualine" },
 	{ import = "divyansh.plugins.oil" },
