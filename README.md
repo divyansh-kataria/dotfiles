@@ -28,8 +28,12 @@ ln -s ~/dotfiles/config/niri ~/.config/niri
 ln -s ~/dotfiles/config/hypr ~/.config/hypr
 ln -s ~/dotfiles/config/mpv ~/.config/mpv
 
+```
+
 ###DNS Setup(Quad9):
 
 sudo ./scripts/dns-setup.sh
 
-```
+## 📚 Documentation
+
+- Post install setup: docs/post-install.md
