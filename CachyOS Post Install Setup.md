@@ -1,6 +1,6 @@
-##### CachyOS Post Install Setup[Niri & Hyprland with Noctalia Shell + GNOME + KDE]
+### CachyOS Post Install Setup[Niri & Hyprland with Noctalia Shell + GNOME + KDE]
 
-### Encrypted DNS Setup(Quad9)
+## Encrypted DNS Setup(Quad9)
 
 1. Configure systemd-resolved
 
