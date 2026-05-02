@@ -1,0 +1,5 @@
+[user]
+	name = Divyansh Kataria
+	email = 217927899+divyansh-kataria@users.noreply.github.com
+[credential]
+	helper = libsecret
