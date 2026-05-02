@@ -41,4 +41,4 @@ sudo ./scripts/dns-setup.sh
 
 ## 📚 Documentation
 
--- [Post install setup](docs/post-install.md)
+[Post install setup](docs/post-install.md)
