@@ -22,12 +22,14 @@ cd dotfiles
 
 ## Link Required Configs:
 
+```bash
 ln -s ~/dotfiles/config/kitty ~/.config/kitty
 ln -s ~/dotfiles/config/alacritty ~/.config/alacritty
 ln -s ~/dotfiles/config/nvim ~/.config/nvim
 ln -s ~/dotfiles/config/niri ~/.config/niri
 ln -s ~/dotfiles/config/hypr ~/.config/hypr
 ln -s ~/dotfiles/config/mpv ~/.config/mpv
+```
 
 ### DNS Setup(Quad9):
 
