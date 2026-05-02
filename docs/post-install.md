@@ -1,61 +1,5 @@
 ### CachyOS Post Install Setup[Niri & Hyprland with Noctalia Shell + GNOME + KDE]
 
-## Encrypted DNS Setup(Quad9)
-
-1. Configure systemd-resolved
-
-sudo vim /etc/systemd/resolved.conf
-
-Paste this:-
-
-[Resolve]
-DNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
-FallbackDNS=1.1.1.1#cloudflare-dns.com 2606:4700:4700::1111#cloudflare-dns.com
-DNSOverTLS=yes
-
-2. Restart resolver
-
-sudo systemctl restart systemd-resolved
-
-3. Make NetworkManager use systemd-resolved
-
-sudo vim /etc/NetworkManager/conf.d/dns.conf
-
-Paste:-
-
-[main]
-dns=systemd-resolved
-
-4. Ignore router DNS
-
-nmcli connection modify "Wired connection 1" ipv4.ignore-auto-dns yes ipv6.ignore-auto-dns yes
-
-to check connection name(if not "Wired Connection 1") then run:- nmcli connection show
-
-5. Restart connection
-
-nmcli connection down "Wired connection 1" && nmcli connection up "Wired connection 1"
-
-6. Link resolv.conf to systemd-resolved
-
-sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
-
-sudo systemctl restart systemd-resolved
-
-7. Verify
-
-resolvectl status
-
-should see quad9 dns and stub and dnsovertls enabled and only in global and no ip in eno1
-
-8. Final test
-
-resolvectl query cloudflare.com
-
-should see:- Data is authenticated: yes
-Data was acquired via encrypted transport: yes
-
-
 ### Apps Installation & DE specific tweaks
 
 ## Niri/w\Noctalia
@@ -94,103 +38,67 @@ paru -Rns micro meld shelly
 
 paru -S vlc yt-dlp yazi gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd wl-clipboard brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 
-### Terminal Shell Setup
+## Terminal Shell Setup
 
-##Change shell to zsh from fish
+Switch to zsh
 
+```bash
 chsh -s /usr/bin/zsh
+```
 
-then run zsh and complete p10k setup
-
-then
-
-nvim ~/.zshrc
-
-paste this at bottom:-
-
-# Default editor
-export EDITOR=nvim
-export VISUAL=nvim
+Then run zsh and complete p10k setup
 
 then run
 
+```bash
+nvim ~/.zshrc
+```
+
+Set default editor
+
+```bash
+export EDITOR=nvim
+export VISUAL=nvim
+```
+
+then run
+
+```bash
 source ~/.zshrc
+```
 
 check with:- echo $EDITOR
 
-# nvim related programs installation
+## Dev tools setup
+
+```md
+## Dev tools
+```
+
+```bash
 
 pipx ensurepath
-
 pipx install black
 
 mkdir -p ~/.npm-global
-
 npm config set prefix '~/.npm-global'
-
 npm install -g prettier
-
-after installing pipx, black, prettier, npm
-
-run
-
-nvim ~/.zshrc
-
-enter this 
-
-export PATH="$HOME/.npm-global/bin:$PATH"
+```
 
 then run
 
-source ~/.zshrc
+```bash
+nvim ~/.zshrc
+```
+
+paste:
+
+```bash
+export PATH="$HOME/.npm-global/bin:$PATH"
+```
 
 ### Git Setup
 
 git config --global user.name "Divyansh Kataria"
-
 git config --global user.email "217927899+divyansh-kataria@users.noreply.github.com"
-
 git config --global credential.helper libsecret
-
-to check:- git config --list
-
-# clone my dotfiles
-
-git clone https://github.com/divyansh-kataria/dotfiles.git
-
-this contains dotfiles for alacritty, gtk-3.0, hypr, kitty, mpv, niri, nvim and uwsm
-
-# Essentials:-
-
-rm -rf ~/.config/kitty
-ln -s ~/dotfiles/kitty ~/.config/kitty
-
-rm -rf ~/.config/alacritty
-ln -s ~/dotfiles/alacritty ~/.config/alacritty
-
-rm -rf ~/.config/nvim
-ln -s ~/dotfiles/nvim ~/.config/nvim
-
-rm -rf ~/.config/mpv
-ln -s ~/dotfiles/mpv ~/.config/mpv
-
-# Niri Specific:-
-
-rm -rf ~/.config/niri
-ln -s ~/dotfiles/niri ~/.config/niri
-
-# Not for KDE
-
-rm -rf ~/.config/gtk-3.0
-ln -s ~/dotfiles/gtk-3.0 ~/.config/gtk-3.0
-
-# Hyprland Specific:-
-
-rm -rf ~/.config/hypr
-ln -s ~/dotfiles/hypr ~/.config/hypr
-
-rm -rf ~/.config/uwsm
-ln -s ~/dotfiles/uwsm ~/.config/uwsm
-
-to check, run:- ls -l ~/.config
-
