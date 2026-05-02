@@ -19,7 +19,7 @@ Clone repo:
 git clone https://github.com/divyansh-kataria/dotfiles.git
 cd dotfiles
 
-Link Required Configs:
+- Link Required Configs:
 
 ln -s ~/dotfiles/config/kitty ~/.config/kitty
 ln -s ~/dotfiles/config/alacritty ~/.config/alacritty
