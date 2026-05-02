@@ -27,12 +27,13 @@ ln -s ~/dotfiles/config/nvim ~/.config/nvim
 ln -s ~/dotfiles/config/niri ~/.config/niri
 ln -s ~/dotfiles/config/hypr ~/.config/hypr
 ln -s ~/dotfiles/config/mpv ~/.config/mpv
-
 ```
 
-###DNS Setup(Quad9):
+### DNS Setup(Quad9):
 
+```bash
 sudo ./scripts/dns-setup.sh
+```
 
 ## 📚 Documentation
 
