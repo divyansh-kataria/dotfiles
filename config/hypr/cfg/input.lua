@@ -28,3 +28,47 @@ hl.gesture({
 	direction = "horizontal",
 	action = "workspace",
 })
+
+-- Maximize and Fullscreen
+hl.gesture({
+	fingers = 3,
+	direction = "up",
+	action = "fullscreen",
+	mode = "maximize",
+})
+
+hl.gesture({
+	fingers = 3,
+	direction = "down",
+	action = "fullscreen",
+})
+
+-- Move and Resize
+hl.gesture({
+	fingers = 3,
+	direction = "swipe",
+	mods = "SUPER",
+	action = "move",
+})
+
+hl.gesture({
+	fingers = 3,
+	direction = "swipe",
+	mods = "ALT",
+	action = "resize",
+})
+
+-- Scratchpad
+hl.gesture({
+	fingers = 4,
+	direction = "up",
+	action = "special",
+	arg = "scratchpad",
+})
+
+-- Close Window
+hl.gesture({
+	fingers = 4,
+	direction = "down",
+	action = "close",
+})
