@@ -4,7 +4,7 @@
 
 local mod = "SUPER"
 
--- 1. APPS & ESSENTIALS
+-- 1. Apps & Essentials
 hl.bind(mod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mod .. " + Q", hl.dsp.window.close())
 hl.bind(mod .. " + E", hl.dsp.exec_cmd(fileManager))

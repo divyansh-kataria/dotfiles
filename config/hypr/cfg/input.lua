@@ -7,12 +7,12 @@ hl.config({
 		kb_layout = "us",
 		numlock_by_default = true,
 
-		-- 1. MOUSE LOGIC
+		-- Mouse
 		follow_mouse = 1,
 		sensitivity = 0,
 		accel_profile = "flat",
 
-		-- 2. TOUCHPAD (Mac-Style)
+		-- Touchpad
 		touchpad = {
 			natural_scroll = true,
 			tap_to_click = true,
@@ -21,7 +21,7 @@ hl.config({
 		},
 	},
 
-	-- 3. THE "GODLY" GESTURES
+	-- Gestures
 	--gestures = {
 	--workspace_swipe = true,
 	--workspace_swipe_fingers = 3,
