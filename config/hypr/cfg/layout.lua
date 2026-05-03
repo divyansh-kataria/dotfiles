@@ -9,11 +9,15 @@ hl.config({
 
 	dwindle = {
 		preserve_split = true,
-		smart_split = false,
 		force_split = 2,
 	},
 
 	master = {
 		new_status = "master",
+	},
+
+	scrolling = {
+		column_width = 0.75,
+		explicit_column_widths = "0.5, 0.75, 0.9",
 	},
 })
