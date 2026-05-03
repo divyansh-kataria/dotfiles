@@ -22,9 +22,10 @@ return {
 	systemmonitor = ipc .. " systemMonitor toggle",
 	settings = ipc .. " settings toggle",
 	controlcenter = ipc .. " controlCenter toggle",
-
-	-- Utilities
 	lock = ipc .. " lockScreen lock",
-	screenshot_area = 'grim -g "$(slurp)" - | wl-copy',
-	screenshot_full = "grim - | wl-copy",
+
+	-- Screenshot
+	screenshot_area = 'grim -g "$(slurp)" - | wl-copy && notify-send "Screenshot" "Area copied to clipboard"',
+	screenshot_full = 'grim - | wl-copy && notify-send "Screenshot" "Full screen copied to clipboard"',
+	screenshot_window = 'grim -g "$(hyprctl activewindow -j | jq -r \'.at[0],.at[1],.size[0],.size[1]\' | paste -sd "," -)" - | wl-copy && notify-send "Screenshot" "Window copied to clipboard"',
 }
