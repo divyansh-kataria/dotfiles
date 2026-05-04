@@ -5,15 +5,13 @@
 ### Niri / Noctalia
 
 ```bash
-paru -Rns micro meld shelly
-paru -S vlc mpv yt-dlp yazi gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd wl-clipboard cliphist wlsunset brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S niri xdg-desktop-portal-gtk xdg-desktop-portal-gnome xwayland-satellite noctalia-shell gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd wl-clipboard cliphist wlsunset brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 ```
 
 ### Hyprland
 
 ```bash
-paru -Rns micro meld shelly
-paru -S hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpicker yazi nautilus gnome-keyring libsecret noctalia-shell sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp gparted neovim kitty tree-sitter-cli nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd wl-clipboard cliphist wlsunset brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S hyprland xdg-desktop-portal-gtk xdg-desktop-portal-hyprland hyprpicker noctalia-shell gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd wl-clipboard cliphist wlsunset brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 ```
 
 ## 🎨 Appearance
