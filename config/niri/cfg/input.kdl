@@ -1,13 +1,11 @@
 // ────────────── Input Configuration ──────────────
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 
 input {
     keyboard {
         xkb {
-            //If you want to overwrite your keyboard layout,
-            // uncomment the line below and change the layout accordingly.
-            //layout "us" // Use the American keyboard layout
+        // layout "us"
         }
+
         numlock // Enable numlock on startup
     }
 
