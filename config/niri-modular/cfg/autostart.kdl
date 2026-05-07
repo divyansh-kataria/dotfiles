@@ -1,4 +1,10 @@
 // ────────────── Startup Applications ──────────────
 
-spawn-sh-at-startup "qs -c noctalia-shell"
+spawn-at-startup "waybar"
+spawn-at-startup "mako"
+spawn-at-startup "swayosd-server"
+spawn-at-startup "hypridle"
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
+spawn-at-startup "awww-daemon"
 
