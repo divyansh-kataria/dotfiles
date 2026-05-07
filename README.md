@@ -1,12 +1,12 @@
 # Dotfiles
 
-My personal Linux setup (CachyOS, Niri/Hyprland, Neovim, Kitty/Alacritty).
+My personal Linux setup (Niri, Hyprland, Neovim, Kitty/Alacritty).
 
 ## 🖼️ Preview
 
 ## ⚡ Features
 
-- Niri / Hyprland configs
+- Niri & Hyprland modular configs
 - Neovim (lazy.nvim setup)
 - Kitty + Alacritty
 - Minimal and performance-focused
@@ -29,7 +29,9 @@ ln -s ~/dotfiles/config/kitty ~/.config/kitty
 ln -s ~/dotfiles/config/alacritty ~/.config/alacritty
 ln -s ~/dotfiles/config/nvim ~/.config/nvim
 ln -s ~/dotfiles/config/niri ~/.config/niri
+ln -s ~/dotfiles/config/niri-noctalia ~/.config/niri-noctalia
 ln -s ~/dotfiles/config/hypr ~/.config/hypr
+ln -s ~/dotfiles/config/hypr-noctalia ~/.config/hypr-noctalia
 ln -s ~/dotfiles/config/mpv ~/.config/mpv
 ```
 
