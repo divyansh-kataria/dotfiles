@@ -28,11 +28,11 @@ Assumes repo is cloned to `~/dotfiles`.
 ln -s ~/dotfiles/config/kitty ~/.config/kitty
 ln -s ~/dotfiles/config/alacritty ~/.config/alacritty
 ln -s ~/dotfiles/config/nvim ~/.config/nvim
+ln -s ~/dotfiles/config/mpv ~/.config/mpv
 ln -s ~/dotfiles/config/niri ~/.config/niri
 ln -s ~/dotfiles/config/niri-noctalia ~/.config/niri-noctalia
 ln -s ~/dotfiles/config/hypr ~/.config/hypr
 ln -s ~/dotfiles/config/hypr-noctalia ~/.config/hypr-noctalia
-ln -s ~/dotfiles/config/mpv ~/.config/mpv
 ```
 
 ### 🌐 DNS Setup (Quad9):
