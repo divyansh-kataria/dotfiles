@@ -44,8 +44,8 @@ window-rule {
     }
 }
 
-window-rule {
-    match is-focused=false
-    opacity 0.9
-}
+//window-rule {
+//    match is-focused=false
+//    opacity 0.9
+//}
 
