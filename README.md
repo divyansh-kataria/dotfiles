@@ -6,7 +6,7 @@ My personal Linux setup (Niri, Hyprland, Neovim, Kitty/Alacritty).
 
 ## ⚡ Features
 
-- Niri & Hyprland modular configs
+- Niri & Hyprland configs with Noctalia Shell
 - Neovim (lazy.nvim setup)
 - Kitty + Alacritty
 - Minimal and performance-focused
@@ -30,9 +30,7 @@ ln -s ~/dotfiles/config/alacritty ~/.config/alacritty
 ln -s ~/dotfiles/config/nvim ~/.config/nvim
 ln -s ~/dotfiles/config/mpv ~/.config/mpv
 ln -s ~/dotfiles/config/niri ~/.config/niri
-ln -s ~/dotfiles/config/niri-noctalia ~/.config/niri-noctalia
 ln -s ~/dotfiles/config/hypr ~/.config/hypr
-ln -s ~/dotfiles/config/hypr-noctalia ~/.config/hypr-noctalia
 ```
 
 ### 🌐 DNS Setup (Quad9):
