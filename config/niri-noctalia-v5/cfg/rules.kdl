@@ -67,17 +67,25 @@ window-rule {
     opacity 1.0
 }
 
+// Floating Noctalia Settings Window
+window-rule {
+    match app-id="dev.noctalia.Noctalia.Settings"
+    open-floating true
+    default-column-width { fixed 1080; }
+    default-window-height { fixed 920; }
+}
+
 // Layer Rules //
 layer-rule {
-    match namespace="^noctalia-wallpaper*"
+    match namespace="^noctalia-wallpaper"
     place-within-backdrop true
 }
 
-// Noctalia Shell Blur
+// Noctalia Blur
 //    layer-rule {
-//        match namespace="^noctalia-.*$"
+//        match namespace="^noctalia-(bar-main|notification|dock|panel)$"
 //        background-effect {
-//            xray true
+//            xray false
 //        }
 //    }
 
