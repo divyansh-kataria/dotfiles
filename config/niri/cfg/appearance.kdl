@@ -5,12 +5,12 @@ cursor {
 }
 
 // Blur //
-//blur {
-//    passes 2
-//    offset 3
-//    noise 0.02
-//    saturation 1.5
-//}
+blur {
+    passes 2
+    offset 3
+    noise 0.02
+    saturation 1.5
+}
 
 // Global Window Visuals //
 window-rule {
