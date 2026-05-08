@@ -1,7 +1,7 @@
 // Cursor //
 cursor {
-    xcursor-theme "Bibata-Modern-Ice"
-    xcursor-size 20
+    xcursor-theme "capitaine-cursors-light"
+    xcursor-size 24
 }
 
 // Blur //
