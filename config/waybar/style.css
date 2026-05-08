@@ -1,0 +1,206 @@
+* {
+  border: none;
+  min-height: 0;
+
+  font-family: "Adwaita Sans", "GeistMono Nerd Font";
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.15px;
+
+  transition: all 0.18s ease;
+}
+
+/* -----------------------------------------------------
+ * Main Bar
+ * ----------------------------------------------------- */
+
+window#waybar {
+  background: transparent;
+  color: #cdd6f4;
+}
+
+/* -----------------------------------------------------
+ * Shared Pills
+ * ----------------------------------------------------- */
+
+#custom-arch,
+#workspaces,
+#clock,
+#mpris,
+#battery,
+#network,
+#pulseaudio,
+#custom-notification {
+  background: rgba(24, 24, 37, 0.78);
+
+  border-radius: 99px;
+
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* -----------------------------------------------------
+ * Arch Logo
+ * ----------------------------------------------------- */
+
+#custom-arch {
+  color: #89b4fa;
+
+  font-size: 16px;
+
+  padding-left: 14px;
+  padding-right: 16px;
+}
+
+/* -----------------------------------------------------
+ * Workspaces
+ * ----------------------------------------------------- */
+
+#workspaces {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#workspaces button {
+  color: #6c7086;
+
+  padding: 0 7px;
+
+  margin: 0 2px;
+
+  border-radius: 99px;
+
+  background: transparent;
+
+  min-width: 18px;
+}
+
+#workspaces button.active {
+  color: #89b4fa;
+
+  background: rgba(137, 180, 250, 0.14);
+}
+
+#workspaces button:hover {
+  color: #cdd6f4;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* -----------------------------------------------------
+ * Center Modules
+ * ----------------------------------------------------- */
+
+#clock {
+  color: #94e2d5;
+
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#mpris {
+  color: #a6e3a1;
+
+  padding-left: 16px;
+  padding-right: 18px;
+
+  min-width: 180px;
+}
+
+/* -----------------------------------------------------
+ * Right Modules
+ * ----------------------------------------------------- */
+
+#battery,
+#network,
+#pulseaudio,
+#custom-notification {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/* -----------------------------------------------------
+ * Colors
+ * ----------------------------------------------------- */
+
+#battery {
+  color: #f9e2af;
+}
+
+#battery.charging {
+  color: #a6e3a1;
+}
+
+#battery.warning {
+  color: #fab387;
+}
+
+#battery.critical:not(.charging) {
+  color: #f38ba8;
+}
+
+#network {
+  color: #89dceb;
+}
+
+#pulseaudio {
+  color: #f5c2e7;
+}
+
+#custom-notification {
+  color: #cba6f7;
+
+  padding-right: 16px;
+}
+
+/* -----------------------------------------------------
+ * Hover
+ * ----------------------------------------------------- */
+
+#custom-arch:hover,
+#clock:hover,
+#mpris:hover,
+#battery:hover,
+#network:hover,
+#pulseaudio:hover,
+#custom-notification:hover {
+  background: rgba(49, 50, 68, 0.92);
+}
+
+/* -----------------------------------------------------
+ * Tooltips
+ * ----------------------------------------------------- */
+
+tooltip {
+  background: rgba(24, 24, 37, 0.96);
+
+  border-radius: 18px;
+
+  color: #cdd6f4;
+}
+
+tooltip label {
+  padding: 8px;
+}
+
+/* -----------------------------------------------------
+ * Battery Animation
+ * ----------------------------------------------------- */
+
+#battery.critical:not(.charging) {
+  animation-name: blink;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  to {
+    background: rgba(243, 139, 168, 0.18);
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "layer": "top",
+  "position": "top",
+
+  "exclusive": true,
+  "passthrough": false,
+
+  "height": 30,
+
+  "margin-top": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+
+  "spacing": 8,
+
+  // --------------------------------------------------
+  // Layout
+  // --------------------------------------------------
+
+  "modules-left": [
+    "custom/arch",
+    "niri/workspaces"
+  ],
+
+  "modules-center": [
+    "clock",
+    "mpris"
+  ],
+
+  "modules-right": [
+    "battery",
+    "network",
+    "pulseaudio",
+    "custom/notification"
+  ],
+
+  // --------------------------------------------------
+  // Arch Logo
+  // --------------------------------------------------
+
+  "custom/arch": {
+    "format": "",
+    "tooltip": false
+  },
+
+  // --------------------------------------------------
+  // Workspaces
+  // --------------------------------------------------
+
+  "niri/workspaces": {
+    "format": "{icon}",
+
+    "format-icons": {
+      "active": "",
+      "default": ""
+    },
+
+    "on-click": "activate",
+
+    "sort-by-number": true
+  },
+
+  // --------------------------------------------------
+  // Clock
+  // --------------------------------------------------
+
+  "clock": {
+    "interval": 1,
+
+    "format": "{:%I:%M %p}",
+
+    "tooltip": false
+  },
+
+  // --------------------------------------------------
+  // MPRIS
+  // --------------------------------------------------
+
+  "mpris": {
+    "format": "{player_icon}  {title}",
+
+    "format-paused": "󰏤  {title}",
+
+    "player-icons": {
+      "default": "󰎆",
+      "spotify": "",
+      "firefox": ""
+    },
+
+    "max-length": 24,
+
+    "tooltip": false
+  },
+
+  // --------------------------------------------------
+  // Battery
+  // --------------------------------------------------
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+
+    "format": "{icon}  {capacity}%",
+
+    "format-charging": "󰂄  {capacity}%",
+
+    "format-full": "󰁹  {capacity}%",
+
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+
+    "tooltip": false
+  },
+
+  // --------------------------------------------------
+  // Network
+  // --------------------------------------------------
+
+  "network": {
+    "format-wifi": "󰤨  {essid}",
+
+    "format-ethernet": "󰈀  Connected",
+
+    "format-disconnected": "󰖪  Offline",
+
+    "max-length": 16,
+
+    "tooltip": false
+  },
+
+  // --------------------------------------------------
+  // Audio
+  // --------------------------------------------------
+
+  "pulseaudio": {
+    "scroll-step": 5,
+
+    "format": "{icon}  {volume}%",
+
+    "format-muted": "󰝟  Muted",
+
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+
+    "on-click": "pavucontrol",
+
+    "tooltip": false
+  },
+
+  // --------------------------------------------------
+  // Notifications
+  // --------------------------------------------------
+
+  "custom/notification": {
+    "format": "󰂚",
+
+    "tooltip": false,
+
+    "on-click": "swaync-client -t"
+  }
+}
