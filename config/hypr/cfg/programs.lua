@@ -22,6 +22,7 @@ return {
 	systemmonitor = ipc .. " systemMonitor toggle",
 	settings = ipc .. " settings toggle",
 	controlcenter = ipc .. " controlCenter toggle",
+	wallpaper = ipc .. " wallpaper toggle",
 	lock = ipc .. " lockScreen lock",
 
 	-- Screenshot

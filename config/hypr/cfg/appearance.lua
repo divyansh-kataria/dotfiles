@@ -14,7 +14,6 @@ hl.config({
 
 		resize_on_border = false,
 		allow_tearing = false,
-		layout = "dwindle",
 	},
 
 	decoration = {
@@ -25,14 +24,14 @@ hl.config({
 
 		shadow = {
 			enabled = true,
-			range = 20,
-			render_power = 4,
+			range = 10,
+			render_power = 3,
 			offset = "0 4",
 			color = "rgba(bb9af744)",
 		},
 
 		blur = {
-			enabled = true,
+			enabled = false,
 			size = 8,
 			passes = 2,
 			vibrancy = 0.1696,

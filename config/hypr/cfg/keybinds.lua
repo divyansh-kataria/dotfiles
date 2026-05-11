@@ -17,6 +17,7 @@ hl.bind(mod .. " + M", hl.dsp.exec_cmd(programs.music))
 hl.bind(mod .. " + I", hl.dsp.exec_cmd(programs.settings))
 hl.bind(mod .. " + ALT + L", hl.dsp.exec_cmd(programs.lock))
 hl.bind(mod .. " + ALT + Q", hl.dsp.exec_cmd(programs.sessionmenu))
+hl.bind(mod .. " + SHIFT + Return", hl.dsp.exec_cmd(programs.wallpaper))
 hl.bind(mod .. " + SHIFT + M", hl.dsp.exec_cmd(programs.systemmonitor))
 hl.bind(mod .. " + SHIFT + N", hl.dsp.exec_cmd(programs.controlcenter))
 
@@ -26,7 +27,7 @@ hl.bind(mod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = 1 }))
 hl.bind(mod .. " + SHIFT + Space", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mod .. " + W", hl.dsp.layout("togglesplit")) -- for dwindle
-hl.bind(mod .. " + R", hl.dsp.layoutmsg("colresize +conf")) -- for scrolling
+hl.bind(mod .. " + R", hl.dsp.layout("colresize +conf")) -- for scrolling
 
 -- Focus & Movement
 local directions = {
@@ -68,10 +69,10 @@ hl.bind(mod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Window Resizing with - and = keys
-hl.bind(mod .. " + minus", hl.dsp.resizeactive({ x = -40, y = 0 }), { repeating = true })
-hl.bind(mod .. " + equal", hl.dsp.resizeactive({ x = 40, y = 0 }), { repeating = true })
-hl.bind(mod .. " + SHIFT + minus", hl.dsp.resizeactive({ x = 0, y = -40 }), { repeating = true })
-hl.bind(mod .. " + SHIFT + equal", hl.dsp.resizeactive({ x = 0, y = 40 }), { repeating = true })
+hl.bind(mod .. " + minus", hl.dsp.window.resize({ x = -40, y = 0, relative = true }), { repeating = true })
+hl.bind(mod .. " + equal", hl.dsp.window.resize({ x = 40, y = 0, relative = true }), { repeating = true })
+hl.bind(mod .. " + SHIFT + minus", hl.dsp.window.resize({ x = 0, y = -40, relative = true }), { repeating = true })
+hl.bind(mod .. " + SHIFT + equal", hl.dsp.window.resize({ x = 0, y = 40, relative = true }), { repeating = true })
 
 -- Monitor Control
 hl.bind(mod .. " + ALT + h", hl.dsp.focus({ monitor = "prev" }))
