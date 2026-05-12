@@ -5,7 +5,7 @@
 ### Niri
 
 ```bash
-paru -S niri xdg-desktop-portal-gtk xdg-desktop-portal-gnome xwayland-satellite noctalia-shell gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd wl-clipboard cliphist wlsunset brave-bin bibata-cursor-theme-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
+paru -S niri xdg-desktop-portal-gtk xdg-desktop-portal-gnome xwayland-satellite noctalia-shell gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd wl-clipboard cliphist wlsunset brave-bin spotify visual-studio-code-bin ente-auth-bin ente-desktop-bin localsend-bin
 ```
 
 ### Hyprland
