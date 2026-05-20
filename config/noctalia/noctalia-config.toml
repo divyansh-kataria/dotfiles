@@ -1,0 +1,96 @@
+[audio]
+enable_sounds = true
+
+[bar.default]
+capsule = true
+end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "battery", "control-center", "session" ]
+padding = 8
+start = [ "launcher", "workspaces", "media" ]
+
+[desktop_widgets]
+schema_version = 1
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[idle]
+behavior_order = [ "lock", "screen-off", "suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660
+
+    [idle.behavior.suspend]
+    action = "suspend"
+    enabled = true
+    lock_before_suspend = true
+    timeout = 18000
+
+[nightlight]
+enabled = true
+start_time = "20:30"
+stop_time = "04:00"
+temperature_night = 5000
+use_weather_location = false
+
+[osd]
+lock_keys = false
+
+[shell]
+avatar_path = "/data/Photos and Videos/download.png"
+font_family = "Adwaita Sans"
+polkit_agent = true
+telemetry_enabled = false
+
+[theme]
+builtin = "Catppuccin"
+
+[wallpaper]
+directory = "/data/Photos and Videos/Wallpapers"
+transition = [ "disc", "honeycomb", "stripes", "wipe", "zoom" ]
+transition_duration = 4000
+
+    [wallpaper.default]
+    path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
+
+    [wallpaper.last]
+    path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
+
+    [wallpaper.monitors.LVDS-1]
+    path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
+
+[weather]
+enabled = false
+
+[widget.battery]
+display_mode = "icon"
+show_label = false
+
+[widget.bluetooth]
+show_label = false
+
+[widget.launcher]
+custom_image = "/data/Photos and Videos/arch logo.png"
+
+[widget.media]
+title_scroll = "on_hover"
+
+[widget.network]
+show_label = false
+
+[widget.volume]
+show_label = false
+
+[widget.workspaces]
+display = "none"
