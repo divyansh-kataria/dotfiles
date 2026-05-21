@@ -5,13 +5,13 @@
 ### Niri
 
 ```bash
-paru -S niri xdg-desktop-portal-gtk xdg-desktop-portal-gnome xwayland-satellite noctalia-shell gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-geist ttf-jetbrains-mono-nerd otf-geist-mono-nerd wl-clipboard cliphist wlsunset brave-bin spotify vscodium ente-auth-bin ente-desktop-bin localsend-bin
+paru -S niri xdg-desktop-portal-gtk xdg-desktop-portal-gnome xwayland-satellite noctalia-shell gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd adobe-source-serif-fonts ttf-geist wl-clipboard cliphist wlsunset brave-bin spotify vscodium ente-auth-bin ente-desktop-bin localsend-bin
 ```
 
 ### Hyprland
 
 ```bash
-paru -S hyprland xdg-desktop-portal-gtk xdg-desktop-portal-hyprland hyprpicker noctalia-shell gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-geist ttf-jetbrains-mono-nerd otf-geist-mono-nerd wl-clipboard cliphist wlsunset brave-bin spotify vscodium ente-auth-bin ente-desktop-bin localsend-bin
+paru -S hyprland xdg-desktop-portal-gtk xdg-desktop-portal-hyprland hyprpicker noctalia-shell gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks seahorse qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd adobe-source-serif-fonts ttf-geist wl-clipboard cliphist wlsunset brave-bin spotify vscodium ente-auth-bin ente-desktop-bin localsend-bin
 ```
 
 ## 🎨 Appearance
