@@ -55,7 +55,7 @@ hl.animation({
 	enabled = true,
 	speed = 8,
 	bezier = "superSilk",
-	style = "slide",
+	style = "slidevert",
 })
 
 hl.animation({
