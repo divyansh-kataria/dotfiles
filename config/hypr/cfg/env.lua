@@ -13,7 +13,7 @@ hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
 hl.env("QT_QPA_PLATFORMTHEME", "gtk3")
 
 -- Cursor Settings
-hl.env("XCURSOR_THEME", "Bibata-Modern-Ice")
-hl.env("XCURSOR_SIZE", "20")
-hl.env("HYPRCURSOR_THEME", "Bibata-Modern-Ice")
-hl.env("HYPRCURSOR_SIZE", "20")
+hl.env("XCURSOR_THEME", "capitaine-cursors-light")
+hl.env("XCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_THEME", "capitaine-cursors-light")
+hl.env("HYPRCURSOR_SIZE", "24")
