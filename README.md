@@ -32,6 +32,7 @@ rm -rf ~/.config/mpv
 rm -rf ~/.config/niri
 rm -rf ~/.config/hypr
 rm -rf ~/.config/noctalia
+rm -rf ~/.config/spotify-player
 
 ln -s ~/dotfiles/config/kitty ~/.config/kitty
 ln -s ~/dotfiles/config/alacritty ~/.config/alacritty
@@ -40,6 +41,7 @@ ln -s ~/dotfiles/config/mpv ~/.config/mpv
 ln -s ~/dotfiles/config/niri ~/.config/niri
 ln -s ~/dotfiles/config/hypr ~/.config/hypr
 ln -s ~/dotfiles/config/noctalia ~/.config/noctalia
+ln -s ~/dotfiles/config/spotify-player ~/.config/spotify-player
 ```
 
 > **Note:** Noctalia configs are for noctalia v5
