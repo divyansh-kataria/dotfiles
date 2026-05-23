@@ -64,6 +64,10 @@ export PATH="$HOME/.npm-global/bin:$PATH"
 ## 🔧 Git Setup
 
 ```bash
+cp dotfiles/home/.gitconfig ~/.gitconfig
+```
+OR
+```bash
 git config --global user.name "your name"
 git config --global user.email "your@email"
 git config --global credential.helper libsecret
