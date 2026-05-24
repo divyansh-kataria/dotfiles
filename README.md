@@ -6,6 +6,7 @@ My personal Linux setup (Niri, Hyprland, Neovim, Kitty/Alacritty).
 
 ## ⚡ Features
 
+- Niri config with Modular Stack(waybar, rofi, mako, etc)
 - Niri & Hyprland configs with Noctalia Shell
 - Neovim (lazy.nvim setup)
 - Kitty + Alacritty
@@ -31,6 +32,10 @@ rm -rf ~/.config/nvim
 rm -rf ~/.config/mpv
 rm -rf ~/.config/niri
 rm -rf ~/.config/hypr
+rm -rf ~/.config/waybar
+rm -rf ~/.config/rofi
+rm -rf ~/.config/swaylock
+rm -rf ~/.config/swayidle
 rm -rf ~/.config/noctalia
 rm -rf ~/.config/spotify-player
 
@@ -40,6 +45,10 @@ ln -s ~/dotfiles/config/nvim ~/.config/nvim
 ln -s ~/dotfiles/config/mpv ~/.config/mpv
 ln -s ~/dotfiles/config/niri ~/.config/niri
 ln -s ~/dotfiles/config/hypr ~/.config/hypr
+ln -s ~/dotfiles/config/hypr ~/.config/waybar
+ln -s ~/dotfiles/config/hypr ~/.config/rofi
+ln -s ~/dotfiles/config/hypr ~/.config/swaylock
+ln -s ~/dotfiles/config/hypr ~/.config/swayidle
 ln -s ~/dotfiles/config/noctalia ~/.config/noctalia
 ln -s ~/dotfiles/config/spotify-player ~/.config/spotify-player
 ```
