@@ -1,4 +1,12 @@
 // ────────────── Startup Applications ──────────────
 
-spawn-sh-at-startup "qs -c noctalia-shell"
+spawn-at-startup "waybar"
+spawn-at-startup "mako"
+spawn-at-startup "awww-daemon"
+spawn-at-startup "swayidle" "-w"
+spawn-at-startup "wlsunset" "-T" "6500" "-t" "5000" "-s" "20:30" "-S" "05:00"
+
+// Clipboard History
+spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
+spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
 
