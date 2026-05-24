@@ -49,7 +49,7 @@ lock_keys = false
 
 [shell]
 avatar_path = "/data/Photos and Videos/download.png"
-font_family = "Adwaita Sans"
+font_family = "Geist"
 polkit_agent = true
 telemetry_enabled = false
 
