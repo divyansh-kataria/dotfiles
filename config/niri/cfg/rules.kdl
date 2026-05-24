@@ -69,16 +69,4 @@ window-rule {
 }
 
 // Layer Rules //
-layer-rule {
-    match namespace="^noctalia-wallpaper*"
-    place-within-backdrop true
-}
-
-// Noctalia Shell Blur
-//    layer-rule {
-//    match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
-//        background-effect {
-//            xray true
-//        }
-//    }
 
