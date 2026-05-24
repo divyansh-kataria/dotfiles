@@ -1,0 +1,4 @@
+// ────────────── Startup Applications ──────────────
+
+spawn-sh-at-startup "qs -c noctalia-shell"
+
