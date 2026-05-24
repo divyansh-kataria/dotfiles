@@ -85,6 +85,7 @@ custom_image = "/data/Photos and Videos/arch logo.png"
 
 [widget.media]
 title_scroll = "on_hover"
+hide_when_no_media = true
 
 [widget.network]
 show_label = false
