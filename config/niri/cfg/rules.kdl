@@ -12,7 +12,6 @@ window-rule {
     match app-id="org.cachyos.cachyos-pi"
     match app-id="localsend"
     match app-id="thunderbird"
-    match app-id="obsidian"
     match app-id="org.qbittorrent.qBittorrent"
     match app-id="btrfs-assistant"
     match app-id="io.ente.auth"
@@ -34,6 +33,7 @@ window-rule {
     match app-id="code"
     match app-id="codium"
     match app-id="steam"
+    match app-id="obsidian"
     match app-id="Spotify"
     match app-id="discord"
     open-maximized true
@@ -76,7 +76,7 @@ layer-rule {
 
 // Noctalia Shell Blur
 //    layer-rule {
-//        match namespace="^noctalia-.*$"
+//    match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
 //        background-effect {
 //            xray true
 //        }
