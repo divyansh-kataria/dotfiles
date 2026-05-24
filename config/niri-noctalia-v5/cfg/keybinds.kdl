@@ -1,7 +1,7 @@
 // ────────────── Keybindings ──────────────
 
 binds {
-    Mod+Shift+ESCAPE                     { show-hotkey-overlay; }
+    Mod+Shift+ESCAPE                    { show-hotkey-overlay; }
 
     // ─── Applications ───
     Mod+Return                          hotkey-overlay-title="Open Terminal: Kitty" { spawn "kitty"; }
@@ -43,14 +43,14 @@ binds {
     Mod+Down                            { focus-window-down; }
     Mod+J                               { focus-window-down; }
 
-    Mod+SHIFT+Left                       { move-column-left; }
-    Mod+SHIFT+H                          { move-column-left; }
-    Mod+SHIFT+Right                      { move-column-right; }
-    Mod+SHIFT+L                          { move-column-right; }
-    Mod+SHIFT+UP                         { move-window-up; }
-    Mod+SHIFT+K                          { move-window-up; }
-    Mod+SHIFT+Down                       { move-window-down; }
-    Mod+SHIFT+J                          { move-window-down; }
+    Mod+SHIFT+Left                      { move-column-left; }
+    Mod+SHIFT+H                         { move-column-left; }
+    Mod+SHIFT+Right                     { move-column-right; }
+    Mod+SHIFT+L                         { move-column-right; }
+    Mod+SHIFT+UP                        { move-window-up; }
+    Mod+SHIFT+K                         { move-window-up; }
+    Mod+SHIFT+Down                      { move-window-down; }
+    Mod+SHIFT+J                         { move-window-down; }
 
     Mod+Home                            { focus-column-first; }
     Mod+End                             { focus-column-last; }
@@ -96,7 +96,7 @@ binds {
     Mod+TAB                             { focus-workspace-previous; }
 
     // ─── Layout Controls ───
-    Mod+SHIFT+F                          { expand-column-to-available-width; }
+    Mod+SHIFT+F                         { expand-column-to-available-width; }
     Mod+C                               { center-column; }
     Mod+CTRL+C                          { center-visible-columns; }
     Mod+R                               { switch-preset-column-width; }
