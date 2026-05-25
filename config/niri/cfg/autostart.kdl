@@ -3,7 +3,7 @@
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
 spawn-at-startup "awww-daemon"
-spawn-at-startup "swayidle" "-w"
+spawn-at-startup "hypridle"
 spawn-at-startup "wlsunset" "-T" "6500" "-t" "5000" "-s" "20:30" "-S" "05:00"
 
 // Clipboard History
