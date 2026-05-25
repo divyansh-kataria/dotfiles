@@ -34,8 +34,6 @@ rm -rf ~/.config/niri
 rm -rf ~/.config/hypr
 rm -rf ~/.config/waybar
 rm -rf ~/.config/rofi
-rm -rf ~/.config/hyprlock
-rm -rf ~/.config/hypridle
 rm -rf ~/.config/spotify-player
 
 ln -s ~/dotfiles/config/kitty ~/.config/kitty
@@ -46,8 +44,6 @@ ln -s ~/dotfiles/config/niri ~/.config/niri
 ln -s ~/dotfiles/config/hypr ~/.config/hypr
 ln -s ~/dotfiles/config/waybar ~/.config/waybar
 ln -s ~/dotfiles/config/rofi ~/.config/rofi
-ln -s ~/dotfiles/config/hyprlock ~/.config/hyprlock
-ln -s ~/dotfiles/config/hypridle ~/.config/hypridle
 ln -s ~/dotfiles/config/spotify-player ~/.config/spotify-player
 ```
 
