@@ -31,7 +31,6 @@ rm -rf ~/.config/nvim
 rm -rf ~/.config/mpv
 rm -rf ~/.config/niri
 rm -rf ~/.config/hypr
-rm -rf ~/.config/spotify-player
 
 ln -s ~/dotfiles/config/kitty ~/.config/kitty
 ln -s ~/dotfiles/config/alacritty ~/.config/alacritty
@@ -39,7 +38,6 @@ ln -s ~/dotfiles/config/nvim ~/.config/nvim
 ln -s ~/dotfiles/config/mpv ~/.config/mpv
 ln -s ~/dotfiles/config/niri ~/.config/niri
 ln -s ~/dotfiles/config/hypr ~/.config/hypr
-ln -s ~/dotfiles/config/spotify-player ~/.config/spotify-player
 ```
 
 ### 🌐 DNS Setup (Quad9):
