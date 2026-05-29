@@ -45,7 +45,7 @@ chsh -s /usr/bin/zsh
 
 Restart shell and complete p10k setup.
 
-Set default editor:
+Add to `.zshrc` to set default editor:
 
 ```bash
 export EDITOR=nvim
