@@ -5,13 +5,13 @@
 ### Niri
 
 ```bash
-paru -S niri xdg-desktop-portal-gtk xdg-desktop-portal-gnome xwayland-satellite noctalia-shell wl-clipboard cliphist wlsunset gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks capitaine-cursors qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd adobe-source-serif-fonts ttf-geist brave-bin vscodium spotify ente-auth-bin ente-desktop-bin localsend-bin --needed
+paru -S niri xdg-desktop-portal-gtk xdg-desktop-portal-gnome xwayland-satellite noctalia-shell wl-clipboard cliphist wlsunset gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks capitaine-cursors qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd adobe-source-serif-fonts ttf-geist brave-origin-bin vscodium spotify ente-auth-bin ente-desktop-bin localsend-bin --needed
 ```
 
 ### Hyprland
 
 ```bash
-paru -S hyprland xdg-desktop-portal-gtk xdg-desktop-portal-hyprland hyprpicker noctalia-shell wl-clipboard cliphist wlsunset gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks capitaine-cursors qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd adobe-source-serif-fonts ttf-geist brave-bin vscodium spotify ente-auth-bin ente-desktop-bin localsend-bin --needed
+paru -S hyprland xdg-desktop-portal-gtk xdg-desktop-portal-hyprland hyprpicker noctalia-shell wl-clipboard cliphist wlsunset gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks capitaine-cursors qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd adobe-source-serif-fonts ttf-geist brave-origin-bin vscodium spotify ente-auth-bin ente-desktop-bin localsend-bin --needed
 ```
 
 ## 🎨 Appearance
