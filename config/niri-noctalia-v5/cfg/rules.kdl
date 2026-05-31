@@ -68,14 +68,6 @@ window-rule {
     opacity 1.0
 }
 
-// Floating Noctalia Settings Window
-window-rule {
-    match app-id="dev.noctalia.Noctalia.Settings"
-    open-floating true
-//    default-column-width { fixed 1080; }
-//    default-window-height { fixed 920; }
-}
-
 // Layer Rules //
 layer-rule {
     match namespace="^noctalia-wallpaper"
