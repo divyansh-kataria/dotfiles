@@ -35,7 +35,9 @@ draw_bold_text_with_bright_colors = true
 size = 11
 
 [font.normal]
-family = "GeistMono Nerd Font"
+# family = "JetBrainsMono Nerd Font"
+# family = "GeistMono Nerd Font"
+family = "Maple Mono NF"
 style = "Regular"
 
 [selection]
