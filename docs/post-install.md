@@ -24,7 +24,7 @@ gsettings set org.gnome.desktop.interface cursor-size 24
 gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
 gsettings set org.gnome.desktop.interface font-name 'Geist 11.3'
 gsettings set org.gnome.desktop.interface document-font-name 'Geist 12'
-gsettings set org.gnome.desktop.interface monospace-font-name 'GeistMono Nerd Font Mono 11'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Maple Mono NF 11'
 gsettings set org.gnome.desktop.interface font-antialiasing 'rgba'
 gsettings set org.gnome.desktop.interface font-hinting 'slight'
 ```
