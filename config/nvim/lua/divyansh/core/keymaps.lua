@@ -1,34 +1,63 @@
-local keymap = vim.keymap
+local map = vim.keymap.set
 
 vim.g.mapleader = " "
 
-keymap.set("n", "<leader>w", ":w<CR>")
-keymap.set("n", "<leader>q", ":q<CR>")
+-- Basic
+map("n", "<leader>w", "<cmd>w<cr>", { desc = "Write file" })
+map("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
 
 -- Telescope
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
-keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" })
-keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Buffers" })
-keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Help" })
+map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
+map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" })
+map("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Buffers" })
+map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Help tags" })
 
--- 🔥 Extra powerful ones
-keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })
-keymap.set("n", "<leader>fc", "<cmd>Telescope commands<cr>", { desc = "Commands" })
-keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Keymaps" })
+map("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })
+map("n", "<leader>fc", "<cmd>Telescope commands<cr>", { desc = "Commands" })
+map("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Keymaps" })
 
-keymap.set("n", "<leader>e", "<cmd>Oil<cr>", { desc = "Open file explorer" })
+-- File explorer
+map("n", "<leader>e", "<cmd>Oil<cr>", { desc = "File explorer" })
 
--- LSP keymaps
-keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
-keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
-keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
-keymap.set("n", "gr", vim.lsp.buf.references, { desc = "References" })
+-- LSP
+map("n", "gd", vim.lsp.buf.definition, { desc = "Definition" })
+map("n", "gD", vim.lsp.buf.declaration, { desc = "Declaration" })
+map("n", "gi", vim.lsp.buf.implementation, { desc = "Implementation" })
 
-keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover docs" })
+-- Telescope UI for references is nicer than quickfix
+map("n", "gr", "<cmd>Telescope lsp_references<cr>", {
+	desc = "References",
+})
 
-keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename symbol" })
-keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
+map("n", "K", vim.lsp.buf.hover, { desc = "Hover documentation" })
 
-keymap.set("n", "<leader>ee", vim.diagnostic.open_float, { desc = "Show diagnostics" })
-keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Prev diagnostic" })
-keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
+map("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename symbol" })
+map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
+
+-- Diagnostics
+map("n", "<leader>ee", vim.diagnostic.open_float, {
+	desc = "Line diagnostics",
+})
+
+map("n", "[d", function()
+	vim.diagnostic.jump({ count = -1 })
+end, {
+	desc = "Previous diagnostic",
+})
+
+map("n", "]d", function()
+	vim.diagnostic.jump({ count = 1 })
+end, {
+	desc = "Next diagnostic",
+})
+
+map("n", "<leader>sd", vim.diagnostic.setloclist, {
+	desc = "Diagnostics list",
+})
+
+-- Formatting
+map("n", "<leader>f", function()
+	require("conform").format({ async = true, lsp_fallback = true })
+end, {
+	desc = "Format buffer",
+})

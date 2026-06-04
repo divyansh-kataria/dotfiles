@@ -1,17 +1,28 @@
 return {
 	{
 		"karb94/neoscroll.nvim",
-		event = "WinScrolled",
 
-		config = function()
+		keys = {
+			"<C-u>",
+			"<C-d>",
+			"<C-b>",
+			"<C-f>",
+			"<C-y>",
+			"<C-e>",
+		},
+
+		opts = {
+			easing_function = "quadratic",
+		},
+
+		config = function(_, opts)
 			local neoscroll = require("neoscroll")
 
-			neoscroll.setup({
-				easing_function = "quadratic",
-			})
+			neoscroll.setup(opts)
 
-			-- 🔥 map scrolling keys
-			local keymap = {
+			local map = vim.keymap.set
+
+			local mappings = {
 				["<C-u>"] = function()
 					neoscroll.ctrl_u({ duration = 150 })
 				end,
@@ -32,8 +43,11 @@ return {
 				end,
 			}
 
-			for key, func in pairs(keymap) do
-				vim.keymap.set({ "n", "v", "x" }, key, func)
+			for key, fn in pairs(mappings) do
+				map({ "n", "v", "x" }, key, fn, {
+					silent = true,
+					desc = "Smooth scroll",
+				})
 			end
 		end,
 	},
