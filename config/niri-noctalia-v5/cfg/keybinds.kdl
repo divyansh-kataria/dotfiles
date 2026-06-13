@@ -12,7 +12,7 @@ binds {
     Mod+V                               hotkey-overlay-title="Clipboard Manager" { spawn-sh "noctalia msg panel-toggle clipboard"; }
     Mod+Period                          hotkey-overlay-title="Emoji Selector" { spawn-sh "noctalia msg panel-toggle launcher /emo"; }
 //    Mod+Shift+M                         hotkey-overlay-title="System Monitor" { spawn-sh "qs -c noctalia-shell ipc call systemMonitor toggle"; }
-    Mod+B                               hotkey-overlay-title="Open Browser: Firefox" { spawn "firefox"; }
+    Mod+B                               hotkey-overlay-title="Open Browser: Brave Origin" { spawn "brave-origin"; }
     Mod+M                               hotkey-overlay-title="Open Music Player: Spotify" { spawn "spotify"; }
     Mod+Alt+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "noctalia msg screen-lock"; }
     Mod+Alt+Q                           hotkey-overlay-title="Session Menu: Noctalia Session Menu" { spawn-sh "noctalia msg panel-toggle session"; }
