@@ -9,7 +9,6 @@ My personal Linux setup (Niri, Hyprland, Neovim, Kitty/Alacritty).
 - Niri & Hyprland configs with Noctalia Shell
 - Neovim (lazy.nvim setup)
 - Kitty + Alacritty
-- Minimal and performance-focused
 
 ## 🚀 Setup
 
