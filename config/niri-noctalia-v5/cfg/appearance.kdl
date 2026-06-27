@@ -20,20 +20,10 @@ window-rule {
 
 // Global Blur
     background-effect {
-        blur false
-//        xray true
+        blur true
+//        xray false
     }
 
-// Global Popup Blur //
-//    popups {
-//        opacity 0.88
-//        geometry-corner-radius 15
-//        background-effect {
-//            blur true
-//            xray true
-//        }
-//    }
-    
 // Global Shadow //
     shadow {
         on
