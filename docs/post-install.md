@@ -5,13 +5,13 @@
 ### Niri
 
 ```bash
-paru -S niri xdg-desktop-portal-gtk xdg-desktop-portal-gnome xwayland-satellite noctalia-shell wl-clipboard cliphist wlsunset gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks capitaine-cursors qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd adobe-source-serif-fonts ttf-geist brave-origin-bin vscodium localsend spotify ente-auth-bin --needed
+paru -S niri xdg-desktop-portal-gtk xdg-desktop-portal-gnome xwayland-satellite noctalia-git wl-clipboard cliphist wlsunset gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks capitaine-cursors qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd adobe-source-serif-fonts brave-origin-bin vscodium localsend spotify ente-auth-bin --needed
 ```
 
 ### Hyprland
 
 ```bash
-paru -S hyprland xdg-desktop-portal-gtk xdg-desktop-portal-hyprland hyprpicker noctalia-shell wl-clipboard cliphist wlsunset gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks capitaine-cursors qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd adobe-source-serif-fonts ttf-geist brave-origin-bin vscodium localsend spotify ente-auth-bin --needed
+paru -S hyprland xdg-desktop-portal-gtk xdg-desktop-portal-hyprland hyprpicker noctalia-shell wl-clipboard cliphist wlsunset gnome-keyring libsecret xdg-user-dirs xdg-utils sddm qt5-wayland qt6-wayland adw-gtk-theme vlc mpv yt-dlp yazi nautilus gparted neovim kitty nodejs npm stylua python-pipx gnome-tweaks capitaine-cursors qbittorrent blanket ttf-jetbrains-mono-nerd otf-geist-mono-nerd adobe-source-serif-fonts brave-origin-bin vscodium localsend spotify ente-auth-bin --needed
 ```
 
 ## 🎨 Appearance
@@ -22,11 +22,7 @@ gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
 gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors-light'
 gsettings set org.gnome.desktop.interface cursor-size 24
 gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
-gsettings set org.gnome.desktop.interface font-name 'Geist 11'
-gsettings set org.gnome.desktop.interface document-font-name 'Geist 12'
 gsettings set org.gnome.desktop.interface monospace-font-name 'Maple Mono NF 11'
-gsettings set org.gnome.desktop.interface font-antialiasing 'rgba'
-gsettings set org.gnome.desktop.interface font-hinting 'slight'
 ```
 
 ## 📁 Mount Fix (Show /data in Nautilus)
