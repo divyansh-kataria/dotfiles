@@ -14,7 +14,7 @@ binds {
 //    Mod+Shift+M                         hotkey-overlay-title="System Monitor" { spawn-sh "qs -c noctalia-shell ipc call systemMonitor toggle"; }
     Mod+B                               hotkey-overlay-title="Open Browser: Firefox" { spawn "firefox"; }
     Mod+M                               hotkey-overlay-title="Open Music Player: Spotify" { spawn "spotify"; }
-    Mod+Alt+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "noctalia msg screen-lock"; }
+    Mod+Alt+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "noctalia msg session lock"; }
     Mod+Alt+Q                           hotkey-overlay-title="Session Menu: Noctalia Session Menu" { spawn-sh "noctalia msg panel-toggle session"; }
     Mod+E                               hotkey-overlay-title="File Manager: Nautilus" { spawn "nautilus"; }
 
