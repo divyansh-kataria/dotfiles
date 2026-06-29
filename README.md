@@ -43,7 +43,7 @@ ln -s ~/dotfiles/config/noctalia ~/.config/noctalia
 
 > **Note:** Noctalia configs are for noctalia v5
 
-### 🌐 DNS Setup (Quad9):
+### 🌐 DNS Setup (Cloudflare):
 
 ```bash
 sudo ./scripts/dns-setup.sh
