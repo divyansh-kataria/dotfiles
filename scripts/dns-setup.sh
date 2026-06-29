@@ -2,7 +2,7 @@
 
 set -e
 
-echo "[*] Setting up Quad9 DNS (systemd-resolved + NetworkManager)"
+echo "[*] Setting up Cloudflare DNS (systemd-resolved + NetworkManager)"
 
 # ---- ROOT CHECK ----
 if [ "$EUID" -ne 0 ]; then
@@ -15,8 +15,8 @@ echo "[*] Writing /etc/systemd/resolved.conf"
 
 cat > /etc/systemd/resolved.conf <<EOF
 [Resolve]
-DNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
-FallbackDNS=1.1.1.1#cloudflare-dns.com 2606:4700:4700::1111#cloudflare-dns.com
+DNS=1.1.1.1#cloudflare-dns.com 1.0.0.1#cloudflare-dns.com 2606:4700:4700::1111#cloudflare-dns.com 2606:4700:4700::1001#cloudflare-dns.com
+FallbackDNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
 DNSOverTLS=yes
 EOF
 
