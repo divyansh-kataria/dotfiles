@@ -98,6 +98,7 @@ position = "top_right"
 
 [shell]
 avatar_path = "/data/Photos and Videos/download.png"
+clipboard_confirm_clear_history = false
 font_family = "Adwaita Sans"
 polkit_agent = true
 telemetry_enabled = false
@@ -126,16 +127,16 @@ transition_duration = 4000
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/data/Photos and Videos/Wallpapers/a_clouds_in_the_sky.png"
+    path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
 
     [wallpaper.last]
-    path = "/data/Photos and Videos/Wallpapers/a_clouds_in_the_sky.png"
+    path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
 
     [wallpaper.monitors.LVDS-1]
     path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/data/Photos and Videos/Wallpapers/a_clouds_in_the_sky.png"
+    path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
 
 [weather]
 enabled = false
