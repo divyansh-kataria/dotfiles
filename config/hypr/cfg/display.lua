@@ -3,8 +3,8 @@
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 hl.monitor({
-	output = "",
-	mode = "preferred",
+	output = "eDP-1",
+	mode = "1920x1080@60.00Hz",
 	position = "auto",
-	scale = "auto",
+	scale = "1.25",
 })
