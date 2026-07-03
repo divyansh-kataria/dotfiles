@@ -12,7 +12,7 @@ return {
 	terminal = "kitty",
 	browser = "zen-browser",
 	fileManager = "nautilus",
-	music = "spotify",
+	music = "spotify-launcher",
 
 	-- Menus & UI
 	menu = ipc .. " panel-toggle launcher",
