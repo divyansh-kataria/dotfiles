@@ -47,11 +47,6 @@ window-rule {
     open-maximized true
 }
 
-window-rule {
-    match app-id="mpv"
-    open-fullscreen true
-}
-
 // Open Floating with blur
 window-rule {
     match app-id="org.pulseaudio.pavucontrol"
