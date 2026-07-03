@@ -2,7 +2,7 @@
 --  PROGRAMS CONFIGURATION
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-local ipc = "qs -c noctalia-shell ipc call"
+local ipc = "noctalia msg"
 
 return {
 	-- Noctalia IPC
@@ -10,20 +10,20 @@ return {
 
 	-- Core Applications
 	terminal = "kitty",
-	browser = "firefox",
+	browser = "zen-browser",
 	fileManager = "nautilus",
 	music = "spotify",
 
 	-- Menus & UI
-	menu = ipc .. " launcher toggle",
-	clipboard = ipc .. " launcher clipboard",
-	emoji = ipc .. " launcher emoji",
-	sessionmenu = ipc .. " sessionMenu toggle",
-	systemmonitor = ipc .. " systemMonitor toggle",
-	settings = ipc .. " settings toggle",
-	controlcenter = ipc .. " controlCenter toggle",
-	wallpaper = ipc .. " wallpaper toggle",
-	lock = ipc .. " lockScreen lock",
+	menu = ipc .. " panel-toggle launcher",
+	clipboard = ipc .. " panel-toggle clipboard",
+	emoji = ipc .. " panel-toggle launcher /emo",
+	sessionmenu = ipc .. " panel-toggle session",
+	systemmonitor = ipc .. " panel-toggle control-center system",
+	settings = ipc .. " settings-toggle",
+	controlcenter = ipc .. " panel-toggle control-center",
+	wallpaper = ipc .. " panel-toggle wallpaper",
+	lock = ipc .. " session lock",
 
 	-- Screenshot
 	screenshot_area = 'grim -g "$(slurp)" - | wl-copy && notify-send "Screenshot" "Area copied to clipboard"',
