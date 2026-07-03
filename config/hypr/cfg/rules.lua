@@ -34,7 +34,7 @@ hl.window_rule({
 	match = {
 		class = [[^(org\.gnome\..*|org\.cachyos\..*|localsend|thunderbird|obsidian|org\.qbittorrent\.qBittorrent|btrfs-assistant|io\.ente\.auth|org\.pwmt\.zathura|code|steam|Spotify|discord)$]],
 	},
-	--	opacity = "0.88",
+	opacity = "0.88",
 })
 
 -- Floating Rule
@@ -43,7 +43,7 @@ hl.window_rule({
 	match = { class = [[^(org\.pulseaudio\.pavucontrol|com\.rafaelmardojai\.Blanket|xdg-desktop-portal-gtk)$]] },
 	float = true,
 	center = true,
-	--	opacity = "0.88",
+	opacity = "0.88",
 })
 
 -- PiP floating rule
@@ -58,7 +58,8 @@ hl.window_rule({
 -- Layer Rules
 hl.layer_rule({
 	name = "noctalia",
-	match = { namespace = "noctalia-background-.*" },
+	match = { namespace = "^noctalia-(bar-.+|notification|dock|panel|attached-panel|osd)$" },
+	no_anim = true,
 	ignore_alpha = 0.5,
 	blur = true,
 	blur_popups = true,
