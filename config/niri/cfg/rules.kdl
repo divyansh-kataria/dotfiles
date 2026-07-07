@@ -7,7 +7,7 @@ window-rule {
 
 window-rule {
     match app-id=r#"^org\.gnome\..*"#
-    match app-id="dev.noctalia.Noctalia.Settings"
+    match app-id="dev.noctalia.Noctalia"
     match app-id="org.cachyos.hello"
     match app-id="org.cachyos.KernelManager"
     match app-id="org.cachyos.cachyos-pi"
