@@ -1,17 +1,17 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -e
 
-echo "[*] Setting up Cloudflare DNS (systemd-resolved + NetworkManager)"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/utils.sh"
 
-# ---- ROOT CHECK ----
-if [ "$EUID" -ne 0 ]; then
-  echo "[!] Run as root: sudo ./scripts/dns-setup.sh"
-  exit 1
+header "Configuring DNS"
+
+if [[ $EUID -ne 0 ]]; then
+    die "This script must be run as root."
 fi
 
-# ---- CONFIGURE systemd-resolved ----
-echo "[*] Writing /etc/systemd/resolved.conf"
+info "Writing /etc/systemd/resolved.conf"
 
 cat > /etc/systemd/resolved.conf <<EOF
 [Resolve]
@@ -20,12 +20,11 @@ FallbackDNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.
 DNSOverTLS=yes
 EOF
 
-# ---- RESTART RESOLVED ----
-echo "[*] Restarting systemd-resolved"
+info "Restarting systemd-resolved"
+
 systemctl restart systemd-resolved
 
-# ---- CONFIGURE NetworkManager ----
-echo "[*] Configuring NetworkManager DNS"
+info "Configuring NetworkManager"
 
 mkdir -p /etc/NetworkManager/conf.d
 
@@ -34,28 +33,29 @@ cat > /etc/NetworkManager/conf.d/dns.conf <<EOF
 dns=systemd-resolved
 EOF
 
-# ---- DETECT ACTIVE CONNECTION ----
-echo "[*] Detecting active network connection"
+info "Detecting active network connection"
 
-conn=$(nmcli -t -f NAME,DEVICE connection show --active | head -n1 | cut -d: -f1)
+CONNECTION=$(nmcli -t -f NAME,DEVICE connection show --active | head -n1 | cut -d: -f1)
 
-if [ -z "$conn" ]; then
-  echo "[!] No active connection found. Skipping nmcli steps."
+if [[ -z "$CONNECTION" ]]; then
+    warn "No active connection found. Skipping NetworkManager configuration."
 else
-  echo "[*] Using connection: $conn"
+    info "Using connection: $CONNECTION"
 
-  nmcli connection modify "$conn" ipv4.ignore-auto-dns yes ipv6.ignore-auto-dns yes
-  nmcli connection down "$conn"
-  nmcli connection up "$conn"
+    nmcli connection modify "$CONNECTION" ipv4.ignore-auto-dns yes ipv6.ignore-auto-dns yes
+    nmcli connection down "$CONNECTION"
+    nmcli connection up "$CONNECTION"
 fi
 
-# ---- FIX resolv.conf ----
-echo "[*] Linking resolv.conf to systemd-resolved"
+info "Linking /etc/resolv.conf"
+
 ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
-# ---- FINAL RESTART ----
-echo "[*] Final restart of systemd-resolved"
+info "Restarting systemd-resolved"
+
 systemctl restart systemd-resolved
 
-echo "[✓] DNS setup complete"
-echo "Run: resolvectl status"
+success "DNS setup complete."
+
+info "Verify with: resolvectl status"
+
