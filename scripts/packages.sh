@@ -79,7 +79,7 @@ NIRI_PACKAGES=(
     xdg-desktop-portal-gtk
     xdg-desktop-portal-gnome
     xwayland-satellite
-    noctalia-git
+    noctalia
 )
 
 HYPRLAND_PACKAGES=(
@@ -87,7 +87,7 @@ HYPRLAND_PACKAGES=(
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     hyprpicker
-    noctalia-git
+    noctalia
 )
 
 case "$COMPOSITOR" in
