@@ -39,5 +39,5 @@ After installation:
 
 ## 📝 Manual Steps
 
-- Install the latest **Maple Mono NF** from: https://github.com/subframe7536/maple-font/releases/latest
+- Install the latest **Maple Mono NF** from: https://github.com/subframe7536/maple-font/releases/latest,
 - If you have a custom mount point (e.g. `/data`), add the `x-gvfs-show` mount option to its `/etc/fstab` entry.
