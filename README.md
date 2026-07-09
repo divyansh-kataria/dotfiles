@@ -39,9 +39,9 @@ After installation:
 
 ## 📝 Manual Steps
 
-### Fonts Installation:
+- Fonts Installation:
 
-- Install the latest **Maple Mono NF (Hinted)** from: https://github.com/subframe7536/maple-font/releases/latest
+Install the latest **Maple Mono NF (Hinted)** from: https://github.com/subframe7536/maple-font/releases/latest
 
 ```bash
 mkdir -p ~/.local/share/fonts/MapleMonoNF
