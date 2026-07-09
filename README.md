@@ -37,6 +37,11 @@ After installation:
 ./scripts/post-install.sh
 ```
 
+This will:
+
+- Add default editor to .zshrc
+- Install dev tools (pipx, black, prettier, npm)
+
 ## 📝 Manual Steps
 
 - Fonts Installation:
