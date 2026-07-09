@@ -26,7 +26,7 @@ The installer will:
 - Create symlinks for the configurations
 - Set up Cloudflare DNS-over-TLS (DoT) with systemd-resolved
 - Apply desktop `gsettings`
-- Change the default shell to Zsh
+- Change the default shell to zsh
 
 After installation:
 
@@ -39,5 +39,21 @@ After installation:
 
 ## 📝 Manual Steps
 
-- Install the latest **Maple Mono NF** from: https://github.com/subframe7536/maple-font/releases/latest,
+### Fonts Installation:
+
+- Install the latest **Maple Mono NF (Hinted)** from: https://github.com/subframe7536/maple-font/releases/latest
+
+```bash
+mkdir -p ~/.local/share/fonts/MapleMonoNF
+
+unzip ~/Downloads/MapleMono-NF.zip -d ~/Downloads/MapleMono-NF
+
+cp ~/Downloads/MapleMono-NF/*.{ttf,otf} ~/.local/share/fonts/MapleMonoNF/
+
+rm ~/Downloads/MapleMono-NF.zip
+rm -rf ~/Downloads/MapleMono-NF
+
+fc-cache -fv
+```
+
 - If you have a custom mount point (e.g. `/data`), add the `x-gvfs-show` mount option to its `/etc/fstab` entry.
