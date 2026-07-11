@@ -7,14 +7,14 @@ cursor {
 // Blur //
 blur {
     passes 3
-    offset 3
+    offset 4
     noise 0.02
     saturation 1.5
 }
 
 // Global Window Visuals //
 window-rule {
-    geometry-corner-radius 20
+    geometry-corner-radius 16
     clip-to-geometry true
     draw-border-with-background false
 
@@ -24,13 +24,22 @@ window-rule {
 //        xray false
     }
 
+// Global Popups Blur
+    popups {
+        opacity 0.88
+        geometry-corner-radius 16
+        background-effect {
+            blur true
+        }
+    }
+
 // Global Shadow //
     shadow {
         on
-        softness 20
-        spread 1
-        offset x=0 y=4
-        color "#bb9af744"
+        softness 28
+        spread 3
+        offset x=0 y=6
+        color "#00000066"
     }
 }
 
