@@ -60,5 +60,3 @@ rm -rf ~/Downloads/MapleMono-NF
 
 fc-cache -fv
 ```
-
-- If you have a custom mount point (e.g. `/data`), add the `x-gvfs-show` mount option to its `/etc/fstab` entry.
