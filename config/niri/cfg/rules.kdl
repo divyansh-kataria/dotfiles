@@ -2,7 +2,7 @@
 
 window-rule {
     match is-floating=true
-    geometry-corner-radius 24
+    geometry-corner-radius 20
 }
 
 window-rule {
