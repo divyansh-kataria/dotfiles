@@ -13,7 +13,6 @@ window-rule {
     match app-id="org.cachyos.cachyos-pi"
     match app-id="localsend"
     match app-id="thunderbird"
-    match app-id="org.qbittorrent.qBittorrent"
     match app-id="btrfs-assistant"
     match app-id="io.ente.auth"
     match app-id="org.pwmt.zathura"
@@ -37,6 +36,7 @@ window-rule {
     match app-id="obsidian"
     match app-id="Spotify"
     match app-id="discord"
+    match app-id="org.qbittorrent.qBittorrent"
     open-maximized true
     opacity 0.88
 }
