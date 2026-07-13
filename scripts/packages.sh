@@ -45,6 +45,7 @@ COMMON_PACKAGES=(
 
     neovim
     kitty
+    ghostty
 
     nodejs
     npm
