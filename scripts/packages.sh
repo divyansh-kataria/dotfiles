@@ -33,6 +33,7 @@ COMMON_PACKAGES=(
     sddm
     qt5-wayland
     qt6-wayland
+    qt6ct
     adw-gtk-theme
 
     vlc
@@ -89,6 +90,8 @@ HYPRLAND_PACKAGES=(
     xdg-desktop-portal-hyprland
     hyprpicker
     noctalia
+    grim
+    slurp
 )
 
 case "$COMPOSITOR" in
