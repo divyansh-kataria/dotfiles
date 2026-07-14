@@ -19,15 +19,16 @@ hl.bind(mod .. " + ALT + L", hl.dsp.exec_cmd(programs.lock))
 hl.bind(mod .. " + ALT + Q", hl.dsp.exec_cmd(programs.sessionmenu))
 hl.bind(mod .. " + SHIFT + Return", hl.dsp.exec_cmd(programs.wallpaper))
 hl.bind(mod .. " + SHIFT + M", hl.dsp.exec_cmd(programs.systemmonitor))
-hl.bind(mod .. " + SHIFT + N", hl.dsp.exec_cmd(programs.controlcenter))
+hl.bind(mod .. " + A", hl.dsp.exec_cmd(programs.controlcenter))
 
 -- Layout & Window Control
 hl.bind(mod .. " + F", hl.dsp.window.fullscreen({ mode = 0 }))
 hl.bind(mod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = 1 }))
 hl.bind(mod .. " + SHIFT + Space", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mod .. " + P", hl.dsp.window.pseudo())
-hl.bind(mod .. " + W", hl.dsp.layout("togglesplit")) -- for dwindle
-hl.bind(mod .. " + R", hl.dsp.layout("colresize +conf")) -- for scrolling
+hl.bind(mod .. " + R", hl.dsp.layout("colresize +conf"))
+hl.bind(mod .. " + W", hl.dsp.layout("consume_or_expel next"))
+hl.bind(mod .. " + SHIFT + w", hl.dsp.layout("promote"))
 
 -- Focus & Movement
 local directions = {
@@ -43,7 +44,14 @@ local directions = {
 
 for key, dir in pairs(directions) do
 	hl.bind(mod .. " + " .. key, hl.dsp.focus({ direction = dir }))
-	hl.bind(mod .. " + SHIFT + " .. key, hl.dsp.window.move({ direction = dir }))
+
+	if dir == "left" then
+		hl.bind(mod .. " + SHIFT + " .. key, hl.dsp.layout("swapcol l"))
+	elseif dir == "right" then
+		hl.bind(mod .. " + SHIFT + " .. key, hl.dsp.layout("swapcol r"))
+	else
+		hl.bind(mod .. " + SHIFT + " .. key, hl.dsp.window.move({ direction = dir }))
+	end
 end
 
 -- Workspaces
@@ -54,7 +62,7 @@ for i = 1, 10 do
 end
 
 hl.bind(mod .. " + TAB", hl.dsp.focus({ workspace = "previous" }))
--- hl.bind(mod .. " + SHIFT + TAB", hl.dsp.focus({ workspace = "r-1" }))
+hl.bind(mod .. " + SHIFT + TAB", hl.dsp.focus({ workspace = "r-1" }))
 
 -- Special Workspace
 hl.bind(mod .. " + S", hl.dsp.workspace.toggle_special("magic"))
@@ -86,31 +94,18 @@ hl.bind(mod .. " + ALT + SHIFT + left", hl.dsp.window.move({ monitor = "prev" })
 hl.bind(mod .. " + ALT + SHIFT + right", hl.dsp.window.move({ monitor = "next" }))
 
 -- Multimedia & Brightness
-hl.bind(
-	"XF86AudioRaiseVolume",
-	hl.dsp.exec_cmd(programs.ipc .. " volume increase"),
-	{ locked = true, repeating = true }
-)
-hl.bind(
-	"XF86AudioLowerVolume",
-	hl.dsp.exec_cmd(programs.ipc .. " volume decrease"),
-	{ locked = true, repeating = true }
-)
-hl.bind("XF86AudioMute", hl.dsp.exec_cmd(programs.ipc .. " volume muteOutput"), { locked = true })
-hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd(programs.ipc .. " volume muteInput"), { locked = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(programs.ipc .. " volume-up 2"), { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(programs.ipc .. " volume-down 2"), { locked = true, repeating = true })
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd(programs.ipc .. " volume-mute"), { locked = true })
+hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd(programs.ipc .. " mic-mute"), { locked = true })
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd(programs.ipc .. " media next"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd(programs.ipc .. " media previous"), { locked = true })
-hl.bind("XF86AudioPause", hl.dsp.exec_cmd(programs.ipc .. " media playPause"), { locked = true })
-hl.bind("XF86AudioPlay", hl.dsp.exec_cmd(programs.ipc .. " media playPause"), { locked = true })
+hl.bind("XF86AudioPlay", hl.dsp.exec_cmd(programs.ipc .. " media toggle"), { locked = true })
 
-hl.bind(
-	"XF86MonBrightnessUp",
-	hl.dsp.exec_cmd(programs.ipc .. " brightness increase"),
-	{ locked = true, repeating = true }
-)
+hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd(programs.ipc .. " brightness-up"), { locked = true, repeating = true })
 hl.bind(
 	"XF86MonBrightnessDown",
-	hl.dsp.exec_cmd(programs.ipc .. " brightness decrease"),
+	hl.dsp.exec_cmd(programs.ipc .. " brightness-down"),
 	{ locked = true, repeating = true }
 )
 
