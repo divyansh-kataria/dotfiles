@@ -9,7 +9,8 @@ hl.config({
 		font_family = "Adwaita Sans",
 		disable_splash_rendering = true,
 		animate_mouse_windowdragging = true,
-		enable_swallow = true,
-		swallow_regex = "^(kitty|Alacritty|com.mitchellh.ghostty)$",
+	},
+	xwayland = {
+		force_zero_scaling = true,
 	},
 })
