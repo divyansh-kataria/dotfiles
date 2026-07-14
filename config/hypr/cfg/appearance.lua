@@ -4,12 +4,12 @@
 
 hl.config({
 	general = {
-		gaps_in = 6,
+		gaps_in = 5,
 		gaps_out = 10,
 		border_size = 1,
 		col = {
 			active_border = "rgba(bb9af7ff)",
-			inactive_border = "rgba(44475a88)",
+			inactive_border = "rgba(1a1b26ff)",
 		},
 
 		resize_on_border = false,
@@ -24,9 +24,10 @@ hl.config({
 
 		shadow = {
 			enabled = true,
-			range = 2,
-			render_power = 3,
-			color = "rgba(bb9af744)",
+			range = 15,
+			render_power = 4,
+			color = "rgba(00000066)",
+			offset = "0 6",
 		},
 
 		blur = {
@@ -34,7 +35,7 @@ hl.config({
 			size = 6,
 			passes = 3,
 			vibrancy = 0.1696,
-			popups = false,
+			popups = true,
 		},
 	},
 })
