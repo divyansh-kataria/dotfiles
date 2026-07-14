@@ -15,9 +15,6 @@ hl.config({
 		-- Touchpad
 		touchpad = {
 			natural_scroll = true,
-			tap_to_click = true,
-			clickfinger_behavior = true, -- 2 fingers for right click
-			scroll_factor = 1.0,
 		},
 	},
 })
@@ -25,22 +22,14 @@ hl.config({
 -- Gestures
 hl.gesture({
 	fingers = 3,
-	direction = "horizontal",
+	direction = "vertical",
 	action = "workspace",
 })
 
--- Maximize and Fullscreen
 hl.gesture({
 	fingers = 3,
-	direction = "up",
-	action = "fullscreen",
-	mode = "maximize",
-})
-
-hl.gesture({
-	fingers = 3,
-	direction = "down",
-	action = "fullscreen",
+	direction = "horizontal",
+	action = "scroll_move",
 })
 
 -- Move and Resize
