@@ -68,6 +68,10 @@ hl.bind(mod .. " + SHIFT + TAB", hl.dsp.focus({ workspace = "r-1" }))
 hl.bind(mod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
+-- Horizontal column scrolling via mouse wheel
+hl.bind(mod .. " + SHIFT + mouse_down", hl.dsp.focus({ direction = "left" }))
+hl.bind(mod .. " + SHIFT + mouse_up", hl.dsp.focus({ direction = "right" }))
+
 -- Workspaces Switching with Mouse
 hl.bind(mod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
