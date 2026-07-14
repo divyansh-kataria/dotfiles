@@ -9,7 +9,7 @@ return {
 	ipc = ipc,
 
 	-- Core Applications
-	terminal = "ghostty",
+	terminal = "kitty",
 	browser = "zen-browser",
 	fileManager = "nautilus",
 	music = "spotify-launcher",
