@@ -32,14 +32,26 @@ hl.window_rule({
 -- Opacity Rule
 hl.window_rule({
 	match = {
-		class = [[^(org\.gnome\..*|org\.cachyos\..*|localsend|thunderbird|obsidian|org\.qbittorrent\.qBittorrent|btrfs-assistant|io\.ente\.auth|org\.pwmt\.zathura|code|steam|Spotify|discord)$]],
+		class = [[^(org\.gnome\..*|org\.cachyos\..*|dev.noctalia.Noctalia|localsend|thunderbird|org\.qbittorrent\.qBittorrent|btrfs-assistant|io\.ente\.auth|org\.pwmt\.zathura|steam|Spotify|discord)$]],
 	},
 	opacity = "0.88",
 })
 
--- Floating Rule
+-- Mazimized Apps Rule
 hl.window_rule({
-	name = "floating-utils",
+	match = { class = [[^(firefox|librewolf|zen.*|brave-browser|brave-origin|helium|vlc|com\.stremio\.stremio)$]] },
+	scrolling_width = 1.0,
+})
+
+-- Maximized with Blur
+hl.window_rule({
+	match = { class = "^(code|codium|obsidian)$" },
+	scrolling_width = 1.0,
+	opacity = 0.88,
+})
+
+-- Floating with Blur
+hl.window_rule({
 	match = { class = [[^(org\.pulseaudio\.pavucontrol|com\.rafaelmardojai\.Blanket|xdg-desktop-portal-gtk)$]] },
 	float = true,
 	center = true,
@@ -48,7 +60,6 @@ hl.window_rule({
 
 -- PiP floating rule
 hl.window_rule({
-	name = "Picture-in-Picture",
 	match = { title = "^([Pp]icture[-s]?[Ii]n[-s]?[Pp]icture)(.*)$" },
 	float = true,
 	pin = true,
@@ -57,7 +68,6 @@ hl.window_rule({
 
 -- Layer Rules
 hl.layer_rule({
-	name = "noctalia",
 	match = { namespace = "^noctalia-(bar-.+|notification|dock|panel|attached-panel|osd)$" },
 	no_anim = true,
 	ignore_alpha = 0.5,
