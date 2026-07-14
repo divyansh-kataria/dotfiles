@@ -4,7 +4,7 @@ binds {
     Mod+Shift+ESCAPE                    { show-hotkey-overlay; }
 
     // ─── Applications ───
-    Mod+Return                          hotkey-overlay-title="Open Terminal: Ghostty" { spawn "ghostty"; }
+    Mod+Return                          hotkey-overlay-title="Open Terminal: Kitty" { spawn "kitty"; }
     Mod+Space                           hotkey-overlay-title="Open App Launcher: Noctalia Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+A                               hotkey-overlay-title="Open Control Center" { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+I                               hotkey-overlay-title="Open Settings" { spawn-sh "noctalia msg settings-toggle"; }
