@@ -29,7 +29,10 @@ line
 
 info "Configuring pipx..."
 
-pipx ensurepath
+if ! grep -qxF 'export PATH="$HOME/.local/bin:$PATH"' "$ZSHRC"; then
+    printf '\nexport PATH="$HOME/.local/bin:$PATH"\n' >> "$ZSHRC"
+fi
+
 pipx install black
 
 success "pipx configured."
