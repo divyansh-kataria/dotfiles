@@ -17,7 +17,7 @@ hl.config({
 	},
 
 	scrolling = {
-		column_width = 0.75,
-		explicit_column_widths = "0.5, 0.75, 0.9",
+		column_width = 0.7,
+		explicit_column_widths = "0.5, 0.7, 0.9",
 	},
 })
