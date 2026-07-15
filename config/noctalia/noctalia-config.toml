@@ -34,18 +34,18 @@ behavior_order = [ "lock", "screen-off", "suspend" ]
     [idle.behavior.lock]
     action = "lock"
     enabled = true
-    timeout = 600
+    timeout = 600.0
 
     [idle.behavior.screen-off]
     action = "screen_off"
     enabled = true
-    timeout = 660
+    timeout = 660.0
 
     [idle.behavior.suspend]
-    action = "suspend"
-    enabled = true
+    action = "lock_and_suspend"
+    enabled = false
     lock_before_suspend = true
-    timeout = 18000
+    timeout = 18000.0
 
 [location]
 sunrise = "04:00"
@@ -122,21 +122,21 @@ builtin = "Catppuccin"
 
 [wallpaper]
 directory = "/data/Photos and Videos/Wallpapers"
-transition = [ "disc", "honeycomb", "wipe" ]
+transition = [ "disc", "honeycomb" ]
 transition_duration = 4000
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
+    path = "/data/Photos and Videos/Wallpapers/my-neighbor-totoro-sunflowers.png"
 
     [wallpaper.last]
-    path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
+    path = "/data/Photos and Videos/Wallpapers/my-neighbor-totoro-sunflowers.png"
 
     [wallpaper.monitors.LVDS-1]
     path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
+    path = "/data/Photos and Videos/Wallpapers/my-neighbor-totoro-sunflowers.png"
 
 [weather]
 enabled = false
