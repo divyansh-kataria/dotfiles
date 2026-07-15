@@ -33,7 +33,6 @@ COMMON_PACKAGES=(
     sddm
     qt5-wayland
     qt6-wayland
-    qt6ct
     adw-gtk-theme
 
     vlc
@@ -56,6 +55,7 @@ COMMON_PACKAGES=(
     gnome-tweaks
 
     capitaine-cursors
+    bibata-cursor-theme-bin
 
     qbittorrent
     blanket
