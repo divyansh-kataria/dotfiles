@@ -32,7 +32,7 @@ hl.window_rule({
 -- Opacity Rule
 hl.window_rule({
 	match = {
-		class = [[^(org\.gnome\..*|org\.cachyos\..*|dev.noctalia.Noctalia|localsend|thunderbird|org\.qbittorrent\.qBittorrent|btrfs-assistant|io\.ente\.auth|org\.pwmt\.zathura|steam|discord)$]],
+		class = [[^(org\.gnome\..*|org\.cachyos\..*|dev.noctalia.Noctalia|localsend|thunderbird|btrfs-assistant|io\.ente\.auth|org\.pwmt\.zathura|steam|discord)$]],
 	},
 	opacity = "0.88",
 })
@@ -45,7 +45,7 @@ hl.window_rule({
 
 -- Maximized with Blur
 hl.window_rule({
-	match = { class = "^(code|codium|Spotify|obsidian)$" },
+	match = { class = "^(code|codium|Spotify|org.qbittorrent.qBittorrent|obsidian)$" },
 	scrolling_width = 1.0,
 	opacity = 0.88,
 })
