@@ -4,7 +4,7 @@
 
 - Niri & Hyprland configs with Noctalia v5
 - Neovim (lazy.nvim setup)
-- Kitty & Ghostty
+- Kitty
 - Cloudflare DNS-over-TLS (DoT) setup
 
 ## 🚀 Installation

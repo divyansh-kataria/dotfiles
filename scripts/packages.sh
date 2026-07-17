@@ -34,44 +34,29 @@ COMMON_PACKAGES=(
     qt5-wayland
     qt6-wayland
     adw-gtk-theme
-
+    kitty
     vlc
+    neovim
     mpv
     yt-dlp
-
     yazi
     nautilus
     gparted
-
-    neovim
-    kitty
-    ghostty
-
     nodejs
     npm
     stylua
     python-pipx
-
+    zen-browser-bin
+    brave-origin-bin
     gnome-tweaks
-
     capitaine-cursors
-
     qbittorrent
-    blanket
-
     ttf-jetbrains-mono-nerd
     otf-geist-mono-nerd
     adobe-source-serif-fonts
-
-    zen-browser-bin
-    helium-browser-bin
-
     vscodium
-
     localsend
-
     spotify-launcher
-
     ente-auth-bin
 )
 
