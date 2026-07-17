@@ -1,5 +1,6 @@
 [audio]
 enable_sounds = true
+sound_volume = 0.99999997764825821
 
 [backdrop]
 enabled = true
@@ -48,6 +49,7 @@ behavior_order = [ "lock", "screen-off", "suspend" ]
     timeout = 18000.0
 
 [location]
+custom_schedule = true
 sunrise = "04:00"
 sunset = "20:30"
 
@@ -65,7 +67,7 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
     box_height = 70.0
     box_width = 400.0
     cx = 768.0
-    cy = 787.0
+    cy = 739.0
     output = "eDP-1"
     rotation = 0.0
     type = "login_box"
@@ -74,6 +76,7 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
+        center_password_text = false
         input_opacity = 1.0
         input_radius = 6.0
         show_caps_lock = true
@@ -82,10 +85,10 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
         show_password_hint = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 128.0
-    box_width = 224.0
+    box_height = 144.0
+    box_width = 320.0
     cx = 768.0
-    cy = 320.0
+    cy = 296.0
     output = "eDP-1"
     rotation = 0.0
     type = "clock"
@@ -94,10 +97,10 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
         clock_style = "digital"
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
-    box_height = 0.0
-    box_width = 0.0
+    box_height = 160.0
+    box_width = 352.0
     cx = 768.0
-    cy = 608.0
+    cy = 560.0
     output = "eDP-1"
     rotation = 0.0
     type = "media_player"
