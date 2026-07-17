@@ -65,7 +65,7 @@ COMMON_PACKAGES=(
     adobe-source-serif-fonts
 
     zen-browser-bin
-    brave-origin-bin
+    helium-browser-bin
 
     vscodium
 
