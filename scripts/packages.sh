@@ -55,7 +55,6 @@ COMMON_PACKAGES=(
     gnome-tweaks
 
     capitaine-cursors
-    bibata-cursor-theme-bin
 
     qbittorrent
     blanket
