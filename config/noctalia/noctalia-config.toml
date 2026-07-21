@@ -18,6 +18,9 @@ start = [ "launcher", "workspaces", "media" ]
 [control_center]
 width = 900
 
+    [control_center.calendar]
+    show_events_card = false
+
 [desktop_widgets]
 schema_version = 1
 widget_order = []
@@ -129,7 +132,7 @@ position = "top_right"
 [shell]
 avatar_path = "/data/Photos and Videos/download.png"
 clipboard_confirm_clear_history = false
-font_family = "Adwaita Sans"
+font_family = "Onest"
 polkit_agent = true
 telemetry_enabled = false
 
