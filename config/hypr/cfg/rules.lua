@@ -45,7 +45,7 @@ hl.window_rule({
 
 -- Maximized with Blur
 hl.window_rule({
-	match = { class = "^(code|codium|Spotify|org.qbittorrent.qBittorrent|obsidian)$" },
+	match = { class = "^(code|codium|spotify|org.qbittorrent.qBittorrent|obsidian)$" },
 	scrolling_width = 1.0,
 	opacity = 0.88,
 })
