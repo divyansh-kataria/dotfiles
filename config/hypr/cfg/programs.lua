@@ -10,7 +10,7 @@ return {
 
 	-- Core Applications
 	terminal = "kitty",
-	browser = "firefox",
+	browser = "zen-browser",
 	fileManager = "nautilus",
 	music = "spotify-launcher",
 
