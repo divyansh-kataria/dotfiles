@@ -44,6 +44,10 @@ sudo "$SCRIPT_DIR/dns-setup.sh"
 
 line
 
+"$SCRIPT_DIR/fonts.sh"
+
+line
+
 "$SCRIPT_DIR/gsettings.sh"
 
 line
