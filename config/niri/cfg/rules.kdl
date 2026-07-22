@@ -5,23 +5,6 @@ window-rule {
     geometry-corner-radius 20
 }
 
-// Opacity Rule
-window-rule {
-    match app-id=r#"^org\.gnome\..*"#
-    match app-id="dev.noctalia.Noctalia"
-    match app-id="org.cachyos.hello"
-    match app-id="org.cachyos.KernelManager"
-    match app-id="org.cachyos.cachyos-pi"
-    match app-id="localsend"
-    match app-id="thunderbird"
-    match app-id="btrfs-assistant"
-    match app-id="io.ente.auth"
-    match app-id="org.pwmt.zathura"
-    match app-id="steam"
-    match app-id="discord"
-    opacity 0.88
-}
-
 // Maximized Apps Rule
 window-rule {
     match app-id="firefox"
@@ -29,6 +12,7 @@ window-rule {
     match app-id="zen"
     match app-id="brave"
     match app-id="helium"
+    match app-id="org.qbittorrent.qBittorrent"
     match app-id="vlc"
     match app-id="com.stremio.stremio"
     open-maximized true
@@ -39,18 +23,26 @@ window-rule {
     match app-id="code"
     match app-id="codium"
     match app-id="spotify"
-    match app-id="org.qbittorrent.qBittorrent"
     match app-id="obsidian"
     open-maximized true
     opacity 0.88
 }
 
-// Floating with Blur
+// Floating Apps
 window-rule {
     match app-id="org.pulseaudio.pavucontrol"
-    match app-id="com.rafaelmardojai.Blanket"
     open-floating true
-    opacity 0.88
+}
+
+// Global Popups Blur
+window-rule {
+    match app-id="spotify"
+    popups {
+        geometry-corner-radius 12
+        background-effect {
+            blur true
+        }
+    }
 }
 
 // Picture-in-Picture //
