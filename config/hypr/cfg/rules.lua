@@ -44,7 +44,7 @@ hl.window_rule({
 	opacity = 0.88,
 })
 
--- Floating with Blur
+-- Floating Apps
 hl.window_rule({
 	match = { class = [[^(org\.pulseaudio\.pavucontrol|xdg-desktop-portal-gtk)$]] },
 	float = true,
