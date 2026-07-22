@@ -29,33 +29,26 @@ hl.window_rule({
 	float = true,
 })
 
--- Opacity Rule
-hl.window_rule({
-	match = {
-		class = [[^(org\.gnome\..*|org\.cachyos\..*|dev.noctalia.Noctalia|localsend|thunderbird|btrfs-assistant|io\.ente\.auth|org\.pwmt\.zathura|steam|discord)$]],
-	},
-	opacity = "0.88",
-})
-
 -- Mazimized Apps Rule
 hl.window_rule({
-	match = { class = [[^(firefox|librewolf|zen.*|brave-browser|brave-origin|helium|vlc|com\.stremio\.stremio)$]] },
+	match = {
+		class = [[^(firefox|librewolf|zen.*|brave-browser|brave-origin|helium|org.qbittorrent.qBittorrent|vlc|com\.stremio\.stremio)$]],
+	},
 	scrolling_width = 1.0,
 })
 
 -- Maximized with Blur
 hl.window_rule({
-	match = { class = "^(code|codium|spotify|org.qbittorrent.qBittorrent|obsidian)$" },
+	match = { class = "^(code|codium|spotify|obsidian)$" },
 	scrolling_width = 1.0,
 	opacity = 0.88,
 })
 
 -- Floating with Blur
 hl.window_rule({
-	match = { class = [[^(org\.pulseaudio\.pavucontrol|com\.rafaelmardojai\.Blanket|xdg-desktop-portal-gtk)$]] },
+	match = { class = [[^(org\.pulseaudio\.pavucontrol|xdg-desktop-portal-gtk)$]] },
 	float = true,
 	center = true,
-	opacity = "0.88",
 })
 
 -- PiP floating rule
@@ -68,9 +61,16 @@ hl.window_rule({
 
 -- Layer Rules
 hl.layer_rule({
-	match = { namespace = "^noctalia-(bar-.+|notification|dock|panel|attached-panel|osd)$" },
+	match = { namespace = "^noctalia-(bar-.+|notification|dock|panel|attached-panel|osd|window-switcher)$" },
 	no_anim = true,
 	ignore_alpha = 0.5,
 	blur = true,
 	blur_popups = true,
 })
+
+-- Persistent Workspaces
+hl.workspace_rule({ workspace = "1", monitor = "eDP-1", persistent = true })
+hl.workspace_rule({ workspace = "2", monitor = "eDP-1", persistent = true })
+hl.workspace_rule({ workspace = "3", monitor = "eDP-1", persistent = true })
+hl.workspace_rule({ workspace = "4", monitor = "eDP-1", persistent = true })
+hl.workspace_rule({ workspace = "5", monitor = "eDP-1", persistent = true })
