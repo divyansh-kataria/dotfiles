@@ -67,8 +67,8 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
     visible = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
-    box_height = 70.0
-    box_width = 400.0
+    box_height = 201.0
+    box_width = 720.0
     cx = 768.0
     cy = 739.0
     output = "eDP-1"
@@ -82,10 +82,11 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
         center_password_text = false
         input_opacity = 1.0
         input_radius = 6.0
+        layout = "regular"
         show_caps_lock = true
         show_keyboard_layout = true
         show_login_button = true
-        show_password_hint = true
+        show_session_buttons = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
     box_height = 144.0
@@ -113,17 +114,13 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
 
 [nightlight]
 enabled = true
-start_time = "20:30"
-stop_time = "04:00"
 temperature_night = 5000
-use_weather_location = false
 
 [notification]
 background_opacity = 0.59999998658895493
 
 [osd]
 background_opacity = 0.59999998658895493
-lock_keys = false
 position = "top_right"
 
     [osd.kinds]
@@ -160,22 +157,22 @@ transition_duration = 4000
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/data/Photos and Videos/Wallpapers/my-neighbor-totoro-sunflowers.png"
+    path = "/data/Photos and Videos/Wallpapers/wallhaven-k881zd_1920x1080.png"
 
     [wallpaper.last]
-    path = "/data/Photos and Videos/Wallpapers/my-neighbor-totoro-sunflowers.png"
+    path = "/data/Photos and Videos/Wallpapers/wallhaven-k881zd_1920x1080.png"
 
     [wallpaper.monitors.LVDS-1]
     path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/data/Photos and Videos/Wallpapers/my-neighbor-totoro-sunflowers.png"
+    path = "/data/Photos and Videos/Wallpapers/wallhaven-k881zd_1920x1080.png"
 
 [weather]
 enabled = false
 
 [widget.battery]
-display_mode = "icon"
+display_mode = "glyph"
 show_label = false
 
 [widget.bluetooth]
