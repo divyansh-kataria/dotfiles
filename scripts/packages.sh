@@ -41,6 +41,7 @@ COMMON_PACKAGES=(
     yt-dlp
     yazi
     nautilus
+    gvfs-mtp
     gparted
     nodejs
     npm
