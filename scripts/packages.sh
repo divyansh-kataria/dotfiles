@@ -11,7 +11,7 @@ if ! command -v paru >/dev/null 2>&1; then
     warn "paru is not installed."
     info "Installing paru..."
 
-    sudo pacman -Sy --needed paru || die "Failed to install paru."
+    sudo pacman -S --needed paru || die "Failed to install paru."
 
     hash -r
 
