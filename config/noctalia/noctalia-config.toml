@@ -157,16 +157,16 @@ transition_duration = 4000
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/data/Photos and Videos/Wallpapers/wallhaven-k881zd_1920x1080.png"
+    path = "/data/Photos and Videos/Wallpapers/wallhaven-3qrdr6_1920x1080.png"
 
     [wallpaper.last]
-    path = "/data/Photos and Videos/Wallpapers/wallhaven-k881zd_1920x1080.png"
+    path = "/data/Photos and Videos/Wallpapers/wallhaven-3qrdr6_1920x1080.png"
 
     [wallpaper.monitors.LVDS-1]
     path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/data/Photos and Videos/Wallpapers/wallhaven-k881zd_1920x1080.png"
+    path = "/data/Photos and Videos/Wallpapers/wallhaven-3qrdr6_1920x1080.png"
 
 [weather]
 enabled = false
@@ -194,4 +194,4 @@ show_label = false
 show_label = false
 
 [widget.workspaces]
-display = "none"
+show_labels = false
