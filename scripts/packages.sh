@@ -47,7 +47,6 @@ COMMON_PACKAGES=(
     npm
     stylua
     python-pipx
-    zen-browser-bin
     brave-origin-bin
     gnome-tweaks
     capitaine-cursors
