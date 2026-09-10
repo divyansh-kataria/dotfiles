@@ -7,7 +7,7 @@ cursor {
 // Blur //
 blur {
     passes 3
-    offset 4
+    offset 3
     noise 0.02
     saturation 1.5
 }
