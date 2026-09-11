@@ -1,6 +1,6 @@
 [audio]
 enable_sounds = true
-sound_volume = 0.99999997764825821
+sound_volume = 0.4999999888241291
 
 [backdrop]
 enabled = true
@@ -8,12 +8,15 @@ enabled = true
 [bar.default]
 background_opacity = 0.59999998658895493
 capsule = true
+center = [ "clock", "audio_visualizer" ]
 end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "battery", "control-center" ]
 margin_edge = 8
 margin_ends = 200
 padding = 6
 radius = 80
 start = [ "launcher", "workspaces", "media" ]
+
+[calendar]
 
 [control_center]
 width = 900
@@ -67,11 +70,13 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
     visible = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
-    box_height = 201.0
+    box_height = 196.0
     box_width = 720.0
     cx = 768.0
     cy = 739.0
     output = "eDP-1"
+    placement_height = 864.0
+    placement_width = 1536.0
     rotation = 0.0
     type = "login_box"
 
@@ -86,7 +91,10 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
         show_caps_lock = true
         show_keyboard_layout = true
         show_login_button = true
+        show_media = true
         show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
     box_height = 144.0
@@ -94,6 +102,8 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
     cx = 768.0
     cy = 296.0
     output = "eDP-1"
+    placement_height = 864.0
+    placement_width = 1536.0
     rotation = 0.0
     type = "clock"
 
@@ -106,6 +116,8 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
     cx = 768.0
     cy = 560.0
     output = "eDP-1"
+    placement_height = 864.0
+    placement_width = 1536.0
     rotation = 0.0
     type = "media_player"
 
@@ -126,6 +138,9 @@ position = "top_right"
     [osd.kinds]
     media = false
 
+[plugins]
+enabled = []
+
 [shell]
 avatar_path = "/data/Photos and Videos/download.png"
 clipboard_confirm_clear_history = false
@@ -144,7 +159,7 @@ telemetry_enabled = false
     wallpaper_position = "center"
 
 [theme]
-builtin = "Catppuccin"
+builtin = "Tokyo-Night"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "gtk4" ]
@@ -157,16 +172,16 @@ transition_duration = 4000
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/data/Photos and Videos/Wallpapers/wallhaven-3qrdr6_1920x1080.png"
+    path = "/data/Photos and Videos/Wallpapers/wallhaven-yqv55x_1920x1080.png"
 
     [wallpaper.last]
-    path = "/data/Photos and Videos/Wallpapers/wallhaven-3qrdr6_1920x1080.png"
+    path = "/data/Photos and Videos/Wallpapers/wallhaven-yqv55x_1920x1080.png"
 
     [wallpaper.monitors.LVDS-1]
     path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/data/Photos and Videos/Wallpapers/wallhaven-3qrdr6_1920x1080.png"
+    path = "/data/Photos and Videos/Wallpapers/wallhaven-yqv55x_1920x1080.png"
 
 [weather]
 enabled = false
