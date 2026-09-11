@@ -66,3 +66,11 @@ layer-rule {
         }
     }
 
+    layer-rule {
+        match namespace="noctalia-window-switcher"
+        background-effect {
+            blur true
+            xray false
+    }
+}
+
