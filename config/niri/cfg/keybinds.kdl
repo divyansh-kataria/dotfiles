@@ -97,6 +97,8 @@ binds {
 
     Mod+TAB                             { focus-workspace-previous; }
 
+    ALT+TAB                             { spawn "noctalia" "msg" "window-switcher"; }
+
     // ─── Layout Controls ───
     Mod+SHIFT+F                         { expand-column-to-available-width; }
     Mod+C                               { center-column; }
