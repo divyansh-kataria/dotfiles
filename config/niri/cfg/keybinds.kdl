@@ -113,8 +113,8 @@ binds {
     Mod+W                               { toggle-column-tabbed-display; }
 
     // ─── Screenshots ───
-    Print                               { screenshot; }
-    Shift+Print                         { screenshot-screen; }
+    Print                               { spawn "noctalia" "msg" "screenshot-region"; }
+    Shift+Print                         { spawn "noctalia" "msg" "screenshot-fullscreen"; }
     Alt+Print                           { screenshot-window; }
 
     // ─── Emergency Escape Key ───
