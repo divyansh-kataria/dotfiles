@@ -48,6 +48,7 @@ COMMON_PACKAGES=(
     stylua
     python-pipx
     brave-origin-bin
+    helium-browser-bin
     gnome-tweaks
     capitaine-cursors
     qbittorrent
