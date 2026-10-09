@@ -24,7 +24,7 @@ map("n", "gd", vim.lsp.buf.definition, { desc = "Definition" })
 map("n", "gD", vim.lsp.buf.declaration, { desc = "Declaration" })
 map("n", "gi", vim.lsp.buf.implementation, { desc = "Implementation" })
 
--- Telescope UI for references is nicer than quickfix
+-- Telescope UI
 map("n", "gr", "<cmd>Telescope lsp_references<cr>", {
 	desc = "References",
 })
