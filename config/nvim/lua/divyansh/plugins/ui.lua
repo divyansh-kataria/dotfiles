@@ -1,7 +1,7 @@
 -- Theme
 return {
 	{
-		-- 🟤 Gruvbox (main)
+		-- Gruvbox
 		"ellisonleao/gruvbox.nvim",
 		priority = 1000,
 		lazy = false,
@@ -19,7 +19,7 @@ return {
 	},
 
 	{
-		-- 🌸 Rosé Pine (soft)
+		-- Rosé Pine
 		"rose-pine/neovim",
 		name = "rose-pine",
 		priority = 1000,
@@ -37,7 +37,7 @@ return {
 	},
 
 	{
-		-- 🌌 Tokyo Night (clean)
+		-- Tokyo Night
 		"folke/tokyonight.nvim",
 		priority = 1000,
 		lazy = false,
@@ -54,7 +54,7 @@ return {
 	},
 
 	{
-		-- 🧁 Catppuccin Mocha (modern)
+		-- Catppuccin Mocha
 		"catppuccin/nvim",
 		name = "catppuccin",
 		priority = 1000,
@@ -73,7 +73,7 @@ return {
 	},
 
 	{
-		-- 🧛 Dracula (classic)
+		-- Dracula
 		"dracula/vim",
 		name = "dracula",
 		priority = 1000,
@@ -85,7 +85,7 @@ return {
 		config = function()
 			vim.cmd.colorscheme("dracula")
 
-			-- Dracula has no native transparency → minimal fix
+			-- Dracula transparency fix
 			vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 			vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 		end,
@@ -112,7 +112,7 @@ return {
 		end,
 	},
 
-	-- ✨ UI enhancement
+	-- UI enhancements
 	{
 		"folke/noice.nvim",
 		event = "VeryLazy",
