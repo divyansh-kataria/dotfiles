@@ -5,8 +5,28 @@
 "Mod" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+A" = "spawn:noctalia msg panel-toggle control-center"
 "Mod+I" = "spawn:noctalia msg settings-toggle"
-"Mod+Escape" = "session-quit"
+"Mod+Shift+Return" = "spawn:noctalia msg panel-toggle wallpaper"
+"Mod+V" = "spawn:noctalia msg panel-toggle clipboard"
+# "Mod+Period" = "spawn:noctalia msg panel-toggle launcher /emo"
+"Mod+Shift+M" = "spawn:noctalia msg panel-toggle control-center system"
 "Mod+B" = "spawn:firefox"
+# "Mod+M" = "spawn:spotify-launcher"
+"Mod+Alt+L" = "spawn:noctalia msg session lock"
+"Mod+Alt+Q" = "spawn:noctalia msg panel-toggle session"
+"Mod+E" = "spawn:nautilus"
+
+# Media Controls
+"XF86AudioRaiseVolume" = { action = "spawn:noctalia msg volume-up 2", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn:noctalia msg volume-down 2", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", allow_when_locked = true }
+"XF86AudioMicMute" = { action = "spawn:noctalia msg mic-mute", allow_when_locked = true }
+"XF86AudioNext" = { action = "spawn:noctalia msg media next", allow_when_locked = true }
+"XF86AudioPrev" = { action = "spawn:noctalia msg media previous", allow_when_locked = true }
+"XF86AudioPlay" = { action = "spawn:noctalia msg media toggle", allow_when_locked = true }
+
+# Brightness Controls
+"XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down", allow_when_locked = true }
 
 # Window Movement and Focus
 "Mod+Q" = { action = "window-close", repeat = false }
@@ -72,4 +92,5 @@
 "Mod+Tab" = "scratchpad-focus-next"
 
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+"Mod+Escape" = "session-quit"
 
