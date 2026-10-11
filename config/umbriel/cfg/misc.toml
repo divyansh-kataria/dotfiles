@@ -1,0 +1,4 @@
+[general]
+xwayland = true
+xwayland_native_resolution = true
+

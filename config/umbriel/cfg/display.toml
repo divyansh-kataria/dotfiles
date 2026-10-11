@@ -1,0 +1,7 @@
+[output.eDP-1]
+mode = "1920x1080@60.001"
+position = [0, 0]
+scale = 1.25
+vrr = "fullscreen"
+hdr = "auto"
+
