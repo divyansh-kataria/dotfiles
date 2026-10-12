@@ -39,7 +39,7 @@ hl.window_rule({
 
 -- Maximized with Blur
 hl.window_rule({
-	match = { class = "^(code|codium|spotify|obsidian)$" },
+	match = { class = "^(code|codium|obsidian)$" },
 	scrolling_width = 1.0,
 	opacity = 0.88,
 })
