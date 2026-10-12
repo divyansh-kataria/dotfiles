@@ -1,0 +1,6 @@
+[animation.workspaces]
+style = "slide"
+# effect = "workspace_wipe"
+duration_ms = 500
+curve = "easeout"
+
