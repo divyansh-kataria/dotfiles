@@ -1,3 +1,12 @@
 [appearance.blur]
 radius = 3
 
+# [appearance.tab_bar]
+# style = "titles"         # "indicator" draws thin slots without titles
+# height = 24
+# font = "sans 10"
+# visible = true           # false hides every bar; tabs keep working
+# hide_when_single = false
+# max_tabs = 6            # show at most 6 slots; more tabs scroll
+# overflow = "scroll"      # or "shrink" to fit every tab
+
