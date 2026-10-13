@@ -7,6 +7,7 @@ files = [
   "cfg/keybinds.toml",
   "cfg/env.toml",
   "cfg/appearance.toml",
+  "/usr/share/umbriel/effects/animation/squash/effect.toml",
   "cfg/layout.toml",
   "cfg/rules.toml",
   "cfg/animations.toml",
