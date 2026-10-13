@@ -6,6 +6,7 @@ files = [
   "cfg/input.toml",
   "cfg/keybinds.toml",
   "cfg/env.toml",
+  "cfg/appearance.toml",
   "cfg/layout.toml",
   "cfg/rules.toml",
   "cfg/animations.toml",
