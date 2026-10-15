@@ -14,6 +14,7 @@ window-rule {
     match app-id="helium"
     match app-id="org.qbittorrent.qBittorrent"
     match app-id="vlc"
+    match app-id="spotify"
     match app-id="com.stremio.stremio"
     open-maximized true
 }
@@ -22,7 +23,6 @@ window-rule {
 window-rule {
     match app-id="code"
     match app-id="codium"
-    match app-id="spotify"
     match app-id="obsidian"
     open-maximized true
     opacity 0.88
@@ -32,17 +32,6 @@ window-rule {
 window-rule {
     match app-id="org.pulseaudio.pavucontrol"
     open-floating true
-}
-
-// Global Popups Blur
-window-rule {
-    match app-id="spotify"
-    popups {
-        geometry-corner-radius 12
-        background-effect {
-            blur true
-        }
-    }
 }
 
 // Picture-in-Picture //
