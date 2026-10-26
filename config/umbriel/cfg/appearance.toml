@@ -6,8 +6,14 @@ drag_opacity = 0.75
 opaque_fullscreen = true
 
 [appearance.blur]
-radius = 3
-passes = 3
+enabled = true
+optimized = true
+passes = 2
+radius = 5
+noise = 0.02
+brightness = 0.9
+contrast = 0.9
+saturation = 1.1
 
 [appearance.shadow]
 enabled = true
@@ -15,12 +21,8 @@ softness = 15
 offset_x = 2
 offset_y = 2
 
-# [appearance.tab_bar]
-# style = "titles"         # "indicator" draws thin slots without titles
-# height = 24
-# font = "sans 10"
-# visible = true           # false hides every bar; tabs keep working
-# hide_when_single = false
-# max_tabs = 6            # show at most 6 slots; more tabs scroll
-# overflow = "scroll"      # or "shrink" to fit every tab
+[colors.border]
+focused = "#7AA3FFFF"
+unfocused = "#292933FF"
+outer = "#1A1A1FFF"
 
