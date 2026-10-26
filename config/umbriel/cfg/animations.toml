@@ -1,23 +1,17 @@
 [animation]
 enabled = true
-duration_ms = 320
-curve = "silk"
+duration_ms = 250
+curve = "supersilk"
 
 # --- Named curves ---------------------------------------------------------
 
 [animation.beziers]
-# Your superSilk, unchanged: cubic-bezier(0.22, 1, 0.36, 1)
-silk = [0.22, 1.0, 0.36, 1.0]
-# Your softBounce, unchanged: cubic-bezier(0.34, 1.56, 0.64, 1)
+supersilk = [0.22, 1.0, 0.36, 1.0]
 softbounce = [0.34, 1.56, 0.64, 1.0]
-
-[animation.springs]
-# Moves, resizes, scratchpad: critically damped, smooth, no wobble.
-glide = { damping = 1.0, stiffness = 520 }
+linear = [0.0, 0.0, 1.0, 1.0]
 
 # --- Windows --------------------------------------------------------------
 
-# Open = your Hyprland windowsIn: speed 5 is 500 ms, softBounce, popin ~92%.
 [animation.windows_in]
 enabled = true
 curve = "softbounce"
@@ -25,91 +19,47 @@ duration_ms = 600
 style = "popin"
 scale = 0.92
 
-# Close = your Hyprland windowsOut: speed 3 is 300 ms, superSilk, popin 90%.
 [animation.windows_out]
 enabled = true
-curve = "silk"
+curve = "supersilk"
 duration_ms = 300
 style = "popin"
 scale = 0.9
 
-# Move, resize, reflow, maximize, restore. The squash effect adds a subtle
-# squash-and-stretch while a window moves. If you don't like it, delete the
-# "effect" line (and its include in config.toml).
 [animation.windows_move]
 enabled = true
-curve = "glide"
-effect = "squash"
+curve = "spring:1,300"
 
+[animation.windows_resize]
+enabled = true
+curve = "spring:1,300"
 
-# --- Workspaces and overview ----------------------------------------------
-
-# Switch = your Hyprland workspaces: speed 8 is 800 ms, superSilk, slide.
 [animation.workspaces]
 enabled = true
 style = "slide"
-curve = "silk"
+curve = "supersilk"
 duration_ms = 800
 
 [animation.overview]
 enabled = true
-curve = "spring:1,640"
-workspace_curve = "spring:1,800"
+curve = "spring:1,500"
+workspace_curve = "spring:1,400"
 
 [animation.scratchpad]
 enabled = true
-curve = "glide"
+curve = "spring:0.9,400"
+dim = 0.3
+blur = true
 
-# --- Border and layers ----------------------------------------------------
+[animation.dialogs]
+enabled = true
+dim = 0.3
 
-# Focus-border colour change. Easing, not a spring, so colours never overshoot.
 [animation.border]
 enabled = true
-curve = "silk"
-duration_ms = 450
+curve = "linear"
+duration_ms = 500
 
-# Layer-shell map/unmap (Noctalia bar, panels, launcher). If panels look like
-# they animate twice (Noctalia has its own animations), set enabled = false.
 [animation.layers]
-enabled = true
-curve = "silk"
-duration_ms = 220
+enabled = false
 
-# --- Optional spice (uncomment to try) ------------------------------------
-#
-# 1) Reveal on open/close instead of pop-in. Needs the reveal include in
-#    config.toml (see below). "effect" overrides style/scale.
-#
-# [animation.windows_in]
-# duration_ms = 380
-# curve = "silk"
-# effect = "reveal"
-#
-# [animation.windows_out]
-# duration_ms = 280
-# curve = "silk"
-# effect = "reveal"
-#
-# 2) Full-scene workspace wipe instead of a plain slide. Needs the
-#    workspace_wipe include in config.toml. A bad shader falls back to slide.
-#
-# [animation.workspaces]
-# style = "reveal"
-# effect = "workspace_wipe"
-# duration_ms = 380
-# curve = "silk"
-
-# ---------------------------------------------------------------------------
-# In ~/.config/umbriel/config.toml add (adjust /usr to your install prefix):
-#
-# [include]
-# files = [
-#   "animations.toml",
-#   "/usr/share/umbriel/effects/animation/squash/effect.toml",
-#   # "/usr/share/umbriel/effects/animation/reveal/effect.toml",
-#   # "/usr/share/umbriel/effects/animation/workspace_wipe/effect.toml",
-# ]
-#
-# Noctalia writes its own include under [include.optional]; leave that alone.
-# Then check it with:  umbriel config validate
-# ---------------------------------------------------------------------------
