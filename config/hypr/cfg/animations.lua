@@ -19,11 +19,16 @@ hl.curve("linear", {
 })
 
 -- Animations
+hl.curve("quickMenu", {
+	type = "bezier",
+	points = { { 0.15, 0 }, { 0.1, 1 } },
+})
+
 hl.animation({
 	leaf = "global",
 	enabled = true,
-	speed = 1,
-	bezier = "linear",
+	speed = 4,
+	bezier = "superSilk",
 })
 
 hl.animation({
@@ -61,29 +66,38 @@ hl.animation({
 hl.animation({
 	leaf = "fadeIn",
 	enabled = true,
-	speed = 2,
+	speed = 3,
 	bezier = "linear",
 })
 
 hl.animation({
 	leaf = "fadeOut",
 	enabled = true,
-	speed = 2,
+	speed = 3,
 	bezier = "linear",
 })
 
 hl.animation({
 	leaf = "layers",
 	enabled = true,
-	speed = 3,
-	bezier = "linear",
+	speed = 4,
+	bezier = "superSilk",
 })
 
 hl.animation({
 	leaf = "layersIn",
 	enabled = true,
-	speed = 2,
-	bezier = "linear",
+	speed = 4,
+	bezier = "superSilk",
+	style = "fade",
+})
+
+hl.animation({
+	leaf = "layersOut",
+	enabled = true,
+	speed = 3,
+	bezier = "superSilk",
+	style = "fade",
 })
 
 hl.animation({
