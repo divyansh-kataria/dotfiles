@@ -1,5 +1,19 @@
+[appearance]
+prefer_no_csd = true
+border_width = 1
+corner_radius = 16
+drag_opacity = 0.75
+opaque_fullscreen = true
+
 [appearance.blur]
 radius = 3
+passes = 3
+
+[appearance.shadow]
+enabled = true
+softness = 15
+offset_x = 2
+offset_y = 2
 
 # [appearance.tab_bar]
 # style = "titles"         # "indicator" draws thin slots without titles
