@@ -2,15 +2,15 @@
 
 # Applications
 "Mod+Return" = { action = "spawn kitty", repeat = false }
-"Mod" = "spawn noctalia msg panel-toggle launcher"
+"Mod+Space" = "spawn noctalia msg panel-toggle launcher"
 "Mod+A" = "spawn noctalia msg panel-toggle control-center"
 "Mod+I" = "spawn noctalia msg settings-toggle"
 "Mod+Shift+Return" = "spawn noctalia msg panel-toggle wallpaper"
 "Mod+V" = "spawn noctalia msg panel-toggle clipboard"
-# "Mod+Period" = "spawn noctalia msg panel-toggle launcher /emo"
+#"Mod+Period" = "spawn noctalia msg panel-toggle launcher /emo"
 "Mod+Shift+M" = "spawn noctalia msg panel-toggle control-center system"
 "Mod+B" = "spawn firefox"
-# "Mod+M" = "spawn spotify-launcher"
+"Mod+M" = "spawn spotify-launcher"
 "Mod+Alt+L" = "spawn noctalia msg session lock"
 "Mod+Alt+Q" = "spawn noctalia msg panel-toggle session"
 "Mod+E" = "spawn nautilus"
@@ -49,15 +49,15 @@
 "Mod+T" = { action = "window-toggle-floating", repeat = false }
 "Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
 "Mod+P" = { action = "window-toggle-pinned", repeat = false }
-"Mod+M" = { action = "window-toggle-maximize-to-edges", repeat = false }
+"Mod+Ctrl+F" = { action = "window-toggle-maximize-to-edges", repeat = false }
 "Mod+F" = { action = "window-toggle-fullscreen", repeat = false }
-"Mod+Ctrl+F" = { action = "window-toggle-maximize", repeat = false }
+"Mod+Shift+F" = { action = "window-toggle-maximize", repeat = false }
 "Mod+R" = "window-cycle-primary-extent"
 "Mod+Shift+R" = "window-cycle-primary-extent-back"
 "Mod+Comma" = "window-consume-left"
 "Mod+Period" = "window-consume-right"
-"Mod+Ctrl+Comma" = "window-consume-from-left"
-"Mod+Ctrl+Period" = "window-consume-from-right"
+"Mod+Shift+Comma" = "window-consume-from-left"
+"Mod+Shift+Period" = "window-consume-from-right"
 "Mod+W" = { action = "column-toggle-tabbed", repeat = false }
 "Mod+Alt+Right" = "column-focus-tab-next"
 "Mod+Alt+Left" = "column-focus-tab-previous"
@@ -86,9 +86,9 @@
 "Mod+Shift+9" = "window-move-to-workspace 9"
 
 # Scratchpad
-"Mod+Shift+Space" = { action = "window-move-to-scratchpad", repeat = false }
-"Mod+Space" = "scratchpad-toggle"
-"Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad", repeat = false }
+"Mod+Shift+S" = { action = "window-move-to-scratchpad", repeat = false }
+"Mod+S" = "scratchpad-toggle"
+"Mod+Ctrl+S" = { action = "window-restore-from-scratchpad", repeat = false }
 "Mod+Tab" = "scratchpad-focus-next"
 
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
