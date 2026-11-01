@@ -1,3 +1,4 @@
+# Window rules
 [[window_rule]]
 blur = true
 
@@ -36,15 +37,6 @@ default_floating = true
 # match.app_id = "^steam_app_.*$"
 # confine_pointer = true
 
-# Named scratchpads can launch an application when toggled while empty.
-# [[scratchpad]]
-# name = "music"
-# spawn_when_empty = "spotify"
-
-# [[window_rule]]
-# match.app_id = "^spotify$"
-# default_scratchpad = "music"
-
 # Leave an application that draws its own corners and shadow undecorated.
 # [[window_rule]]
 # match.app_id = "^org[.]gnome[.]TextEditor$"
@@ -52,9 +44,7 @@ default_floating = true
 # corner_radius = 0
 # shadow = false
 
-# ==============================================================================
 # Layer rules
-# https://docs.noctalia.dev/umbriel/layer-rules/
 [[layer_rule]]
 match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
 blur = true
