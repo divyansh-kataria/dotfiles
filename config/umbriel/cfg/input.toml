@@ -19,5 +19,5 @@ size = 32
 hardware_cursor = true
 
 [input.focus]
-follows_mouse = "always"
+follows_mouse = "sloppy"
 
