@@ -63,6 +63,7 @@ COMMON_PACKAGES=(
 UMBRIEL_PACKAGES=(
     umbriel
     xdg-desktop-portal-gtk
+    xdg-desktop-portal-umbriel
     noctalia
   )
 
