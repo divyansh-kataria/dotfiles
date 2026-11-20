@@ -2,7 +2,7 @@
 
 ## ⚡ Features
 
-- Niri & Hyprland configs with Noctalia v5
+- Umbriel, Niri and Hyprland configs with Noctalia v5
 - Neovim (lazy.nvim setup)
 - Kitty
 - Cloudflare DNS-over-TLS (DoT) setup
@@ -21,7 +21,7 @@ cd dotfiles
 
 The installer will:
 
-- Prompt you to choose Niri or Hyprland
+- Prompt you to choose your compositor
 - Install all required packages
 - Create symlinks for the configurations
 - Set up Cloudflare DNS-over-TLS (DoT) with systemd-resolved
