@@ -21,7 +21,7 @@ fi
 COMPOSITOR="$1"
 
 if [[ -z "$COMPOSITOR" ]]; then
-    die "Usage: ./packages.sh [niri|hyprland]"
+    die "Usage: ./packages.sh [umbriel|niri|hyprland]"
 fi
 
 COMMON_PACKAGES=(
@@ -60,6 +60,12 @@ COMMON_PACKAGES=(
     ente-auth-bin
 )
 
+UMBRIEL_PACKAGES=(
+    umbriel
+    xdg-desktop-portal-gtk
+    noctalia
+  )
+
 NIRI_PACKAGES=(
     niri
     xdg-desktop-portal-gtk
@@ -79,6 +85,10 @@ HYPRLAND_PACKAGES=(
 )
 
 case "$COMPOSITOR" in
+    umbriel)
+        PACKAGES=("${COMMON_PACKAGES[@]}" "${UMBRIEL_PACKAGES[@]}")
+        ;;
+
     niri)
         PACKAGES=("${COMMON_PACKAGES[@]}" "${NIRI_PACKAGES[@]}")
         ;;
