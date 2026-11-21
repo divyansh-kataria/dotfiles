@@ -9,17 +9,17 @@ opaque_fullscreen = true
 enabled = true
 optimized = true
 passes = 3
-radius = 5
+radius = 7
 noise = 0.02
 brightness = 0.9
-contrast = 0.9
-saturation = 1.1
+contrast = 0.98
+saturation = 1.3
 
 [appearance.shadow]
 enabled = true
-softness = 15
-offset_x = 2
-offset_y = 2
+softness = 24
+offset_x = 0
+offset_y = 4
 
 [colors.border]
 focused = "#7AA3FFFF"
