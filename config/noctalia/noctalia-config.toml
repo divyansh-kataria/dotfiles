@@ -6,8 +6,9 @@ sound_volume = 0.99999997764825821
 enabled = true
 
 [bar.default]
-background_opacity = 0.59999998658895493
+background_opacity = 0.44999998994171619
 capsule = true
+capsule_opacity = 0.84999998100101948
 center = [ "clock", "audio_visualizer" ]
 end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "battery", "control-center" ]
 margin_edge = 8
@@ -38,6 +39,9 @@ widget_order = []
 
     [desktop_widgets.widget]
 
+[dock]
+background_opacity = 0.44999998994171619
+
 [idle]
 behavior_order = [ "lock", "screen-off", "suspend" ]
 
@@ -64,7 +68,7 @@ sunset = "20:30"
 
 [lockscreen]
 transition = [ "fade" ]
-transition_duration = 900
+transition_duration = 400
 
 [lockscreen_widgets]
 enabled = true
@@ -83,9 +87,9 @@ widget_order = [
 
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 196.0
-    box_width = 720.0
+    box_width = 810.0
     cx = 768.0
-    cy = 739.0
+    cy = 718.0
     output = "eDP-1"
     placement_height = 864.0
     placement_width = 1536.0
@@ -93,20 +97,22 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "surface_variant"
-        background_opacity = 0.88
+        background_color = "surface_container"
+        background_opacity = 0.0
         background_radius = 12.0
         center_password_text = false
-        input_opacity = 1.0
-        input_radius = 6.0
+        input_opacity = 0.29999999999999999
+        input_radius = 16.0
         layout = "regular"
         show_caps_lock = true
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
+        show_password_reveal = true
         show_session_buttons = true
-        show_unlock_hint = true
-        show_weather = true
+        show_unlock_hint = false
+        show_weather = false
 
     [lockscreen_widgets.widget."lockscreen-login-box@winit"]
     box_height = 196.0
@@ -120,7 +126,7 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@winit".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -131,15 +137,17 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 144.0
-    box_width = 320.0
+    box_height = 208.0
+    box_width = 416.0
     cx = 768.0
-    cy = 296.0
+    cy = 256.0
     output = "eDP-1"
     placement_height = 864.0
     placement_width = 1536.0
@@ -147,7 +155,7 @@ widget_order = [
     type = "clock"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
-        background = true
+        background = false
         background_color = "surface"
         background_opacity = 0.80000000000000004
         background_padding = 10
@@ -159,32 +167,46 @@ widget_order = [
         font_family = ""
         format = "{:%H:%M}"
         shadow = true
+        show_seconds = true
         timezone = ""
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
-    box_height = 160.0
-    box_width = 352.0
+    box_height = 128.0
+    box_width = 288.0
     cx = 768.0
-    cy = 496.0
+    cy = 480.0
     output = "eDP-1"
     placement_height = 864.0
     placement_width = 1536.0
     rotation = 0.0
-    type = "media_player"
+    type = "audio_visualizer"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = false
+        background_color = "surface"
+        background_opacity = 0.80000000000000004
+        background_padding = 10
+        background_radius = 12
+        bands = 32
+        centered = true
+        color_1 = "primary"
+        color_2 = "on_surface_variant"
         hide_when_no_media = true
+        mirrored = true
+        reversed = false
+        show_wave = false
+        show_when_idle = true
 
 [nightlight]
 enabled = true
 temperature_night = 5000
 
 [notification]
-background_opacity = 0.59999998658895493
+background_opacity = 0.4999999888241291
 border = false
 
 [osd]
-background_opacity = 0.59999998658895493
+background_opacity = 0.44999998994171619
 border = false
 position = "top_right"
 
@@ -199,6 +221,7 @@ avatar_path = "/data/Photos and Videos/download.png"
 button_borders = false
 card_borders = false
 clipboard_confirm_clear_history = false
+corner_radius_scale = 1.5000000223517418
 font_family = "Onest"
 input_borders = false
 polkit_agent = true
@@ -219,7 +242,11 @@ telemetry_enabled = false
 
     [shell.screenshot]
     annotate = true
-    remember_last_region = true
+    region_dim_opacity = 0.44999998994171619
+    remember_last_region = false
+
+    [shell.shadow]
+    alpha = 0.44999998994171619
 
 [theme]
 builtin = "Tokyo-Night"
