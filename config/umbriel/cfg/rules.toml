@@ -48,7 +48,7 @@ default_floating = true
 [[layer_rule]]
 match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
 blur = true
-blur_ignore_alpha = 0.5
+blur_ignore_alpha = 0.40
 blur_popups = true
 blur_optimized = false
 
