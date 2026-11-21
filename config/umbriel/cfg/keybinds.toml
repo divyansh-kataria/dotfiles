@@ -91,6 +91,12 @@
 "Mod+Ctrl+S" = { action = "window-restore-from-scratchpad", repeat = false }
 "Mod+Tab" = "scratchpad-focus-next"
 
+# Screenshots
+"Print" = "spawn noctalia msg screenshot-region"
+"Shift+Print" = "spawn noctalia msg screenshot-fullscreen"
+"Alt+Print" = "spawn noctalia msg screenshot-window"
+
+# Exit/Power
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
 "Mod+Escape" = "session-quit"
 
