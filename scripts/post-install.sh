@@ -55,6 +55,15 @@ success "npm configured."
 
 line
 
+info "Configuring XDG user directories..."
+
+xdg-user-dirs-update
+xdg-user-dirs-gtk-update
+
+success "XDG user directories configured."
+
+line
+
 warn "The bundled .gitconfig is Divyansh's personal Git configuration."
 warn "It may overwrite your Git name, email and other settings."
 
