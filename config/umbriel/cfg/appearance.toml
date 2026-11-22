@@ -1,6 +1,7 @@
 [appearance]
 prefer_no_csd = true
 border_width = 1
+outer_border_width = 0
 corner_radius = 16
 drag_opacity = 0.75
 opaque_fullscreen = true
@@ -21,8 +22,11 @@ softness = 24
 offset_x = 0
 offset_y = 4
 
+[colors]
+shadow = "#00000055"
+
 [colors.border]
-focused = "#7AA3FFFF"
-unfocused = "#292933FF"
-outer = "#1A1A1FFF"
+focused = "#7aa2f7FF"
+unfocused = "#00000000"
+outer = "#00000000"
 
