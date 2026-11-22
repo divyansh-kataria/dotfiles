@@ -20,7 +20,7 @@ default_focused = false
 default_pinned = true
 
 [[window_rule]]
-match.app_id = ["firefox", "librewolf", "zen", "brave", "helium", "org.qbittorrent.qBittorrent", "vlc", "spotify", "steam", "com.stremio.stremio"]
+match.app_id = ["firefox", "librewolf", "zen", "brave", "helium", "org.qbittorrent.qBittorrent", "vlc", "spotify", "steam", "com.stremio.Stremio"]
 default_maximize = true
 
 [[window_rule]]
