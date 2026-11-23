@@ -100,9 +100,9 @@ widget_order = [
         background_color = "surface_container"
         background_opacity = 0.0
         background_radius = 12.0
-        center_password_text = false
+        center_password_text = true
         input_opacity = 0.29999999999999999
-        input_radius = 16.0
+        input_radius = 12.0
         layout = "regular"
         show_caps_lock = true
         show_keyboard_layout = true
@@ -262,16 +262,16 @@ transition_duration = 4000
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/data/Photos and Videos/Wallpapers/b-748.jpg"
+    path = "/data/Photos and Videos/Wallpapers/lockheed-martin-f-3840x2160-27550.jpg"
 
     [wallpaper.last]
-    path = "/data/Photos and Videos/Wallpapers/b-748.jpg"
+    path = "/data/Photos and Videos/Wallpapers/lockheed-martin-f-3840x2160-27550.jpg"
 
     [wallpaper.monitors.LVDS-1]
     path = "/data/Photos and Videos/Wallpapers/117497448_p0.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/data/Photos and Videos/Wallpapers/b-748.jpg"
+    path = "/data/Photos and Videos/Wallpapers/lockheed-martin-f-3840x2160-27550.jpg"
 
 [weather]
 enabled = false
