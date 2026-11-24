@@ -32,7 +32,7 @@ hl.window_rule({
 -- Mazimized Apps Rule
 hl.window_rule({
 	match = {
-		class = [[^(firefox|librewolf|zen.*|brave-browser|brave-origin|helium|org.qbittorrent.qBittorrent|vlc|com\.stremio\.stremio)$]],
+		class = [[^(firefox|librewolf|zen.*|brave-browser|brave-origin|helium|org.qbittorrent.qBittorrent|vlc|com\.stremio\.Stremio)$]],
 	},
 	scrolling_width = 1.0,
 })
