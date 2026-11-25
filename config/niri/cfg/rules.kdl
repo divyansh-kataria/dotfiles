@@ -12,6 +12,7 @@ window-rule {
     match app-id="zen"
     match app-id="brave"
     match app-id="helium"
+    match app-id="org.ladybird.Ladybird"
     match app-id="org.qbittorrent.qBittorrent"
     match app-id="vlc"
     match app-id="spotify"
